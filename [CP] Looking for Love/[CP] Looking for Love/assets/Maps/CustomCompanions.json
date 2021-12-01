@@ -1,0 +1,114 @@
+{
+	"Changes": [
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_LFL_MarnieBarn",
+			"MapTiles": [
+				{
+					"Position": { "X": 9, "Y": 5 },
+					"Layer": "Back",
+					"SetProperties": {
+						  "CustomCompanions": "Spawn 1 foggy.lfl.marnieanimals.ButtermilkNormal"
+					},
+				},
+				{
+					"Position": { "X": 12, "Y": 6 },
+					"Layer": "Back",
+					"SetProperties": {
+						  "CustomCompanions": "Spawn 1 foggy.lfl.marnieanimals.CharlieUnknown"
+					},
+				},
+			],
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_LFL_MarnieBarn",
+			"MapTiles": [
+				{
+					"Position": { "X": 9, "Y": 5 },
+					"Layer": "Back",
+					"SetProperties": {
+						  "CustomCompanions": "Spawn 1 foggy.lfl.marnieanimals.ButtermilkPregnant"
+					},
+				},
+			],
+			"When": { 
+				"Hearts:Marnie": "{{Range: 8, 10}}" ,
+				"Date": "Marnie",
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_LFL_MarnieBarn",
+			"MapTiles": [
+				{
+					"Position": { "X": 9, "Y": 5 },
+					"Layer": "Back",
+					"SetProperties": {
+						  "CustomCompanions": "Spawn 1 foggy.lfl.marnieanimals.ButtermilkMom"
+					},
+				},
+				{
+					"Position": { "X": 4, "Y": 4 },
+					"Layer": "Back",
+					"SetProperties": {
+						  "CustomCompanions": "Spawn 1 foggy.lfl.marnieanimals.Buttercup"
+					},
+				},
+			],
+			"When": { "HasSeenEvent": "282815612",}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_LFL_MarnieBarn",
+			"MapTiles": [
+				{
+					"Position": { "X": 11, "Y": 9 },
+					"Layer": "Back",
+					"SetProperties": {
+						  "CustomCompanions": "Spawn 3 foggy.lfl.marnieanimals.BlueChicken"
+					},
+				},
+				{
+					"Position": { "X": 12, "Y": 6 },
+					"Layer": "Back",
+					"SetProperties": {
+						  "CustomCompanions": "Spawn 1 foggy.lfl.marnieanimals.CharlieKnown"
+					},
+				},
+			],
+			"When": { "HasSeenEvent": "3900074" },
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_LFL_MarnieBarn",
+			"MapTiles": [
+				{
+					"Position": { "X": 12, "Y": 6 },
+					"Layer": "Back",
+					"SetProperties": {
+						  "CustomCompanions": null
+					},
+				},
+			],
+			"When": { 
+				"HasSeenEvent": "3900074",
+				"HasMod": "FlashShifter.StardewValleyExpandedCP"
+				},
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Custom_LFL_MarnieBarn",
+			"MapTiles": [
+				{
+					"Position": { "X": 12, "Y": 6 },
+					"Layer": "Back",
+					"SetProperties": {
+						  "CustomCompanions": null
+					},
+				},
+			],
+			"When": { "Spouse": "Shane",	},
+		},
+	]
+}

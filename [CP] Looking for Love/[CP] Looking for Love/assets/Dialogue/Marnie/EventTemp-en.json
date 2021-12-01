@@ -1,0 +1,6 @@
+{
+	"Entries": {
+						"noButtermilk": "pause 500/emote Marnie 40/pause 500/speak Marnie \"You're right. I shouldn't have asked someone with so little experience...$s\"/pause 1500/playSound cow/emote Marnie 16/faceDirection Marnie 3/speak Marnie \"It's okay, girl. I'm right here.$s\"/pause 500/playSound cow/emote farmer 40/globalFade/viewport -1000 -1000/changeLocation Forest/viewport -1000 -1000/friendship Marnie -250/end position 99 23",
+						"rejectMarnie": "pause 1000/emote Marnie 40/pause 500/speak Marnie \"...Oh. No, I'm sorry...$3#$b#I shouldn't have assumed anything...$s\"/pause 1500/playSound cow/emote Marnie 16/move Marnie 0 1 3/move Marnie -1 0 3/speak Marnie \"It's okay, girl... I'm right here.$s\"/pause 2000/speak Marnie \"Mr. @... I'm sorry. Maybe it's best if you leave.$8^Ms. @... I'm sorry. Maybe it's best if you leave.$8\"/pause 500/emote farmer 40/globalFade/viewport -1000 -1000/changeLocation Forest/viewport -1000 -1000/friendship Marnie -250/end position 99 23",
+				},
+}

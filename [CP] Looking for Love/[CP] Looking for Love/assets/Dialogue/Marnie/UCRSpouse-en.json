@@ -1,0 +1,11 @@
+{
+	"Entries": {
+				"give_flowersA": "I'll find somewhere nice to put these.$4",
+				"give_flowersB": "Smells nice, I love them!$6",
+				"give_pendant": "I've already got the one from before, sweetie.$6",
+				"engageA": "We're already getting married, sweetie.$h",
+				"engageB": "I only need the one, silly.$6",
+				"marriedA": "We're already getting married, sweetie. Unless you think we can do it again?$h",
+				"marriedB": "Where are you finding these pendants, sweetie?$h",
+				},
+}

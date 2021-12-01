@@ -1,0 +1,72 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Fields": {
+				"Marnie": {
+					5: "datable",
+				}
+			},
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Dialogue/MarriageDialogueMarnie",
+			"FromFile": "assets/blank.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "{{FirstValidFile: assets/Marnie/{{language}}.json, assets/Marnie/default.json }}",
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Marnie": "MarnieSpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/MarnieSpouseRoom",
+            "FromFile": "assets/Maps/spouseroomMarnie.tmx"
+        },
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Marnie",
+			"Entries": {
+				"marriage_Mon": "730 AnimalShop 12 14 2 \"Strings\\schedules\\Marnie:marriage_Mon.000\"/1700 Forest 68 -1 0",
+				"marriage_Wed": "1100 AnimalShop 12 14 2 \"Strings\\schedules\\Marnie:marriage_Wed.000\"/1700 Forest 68 -1 0",
+				"marriage_Fri": "1100 AnimalShop 12 14 2 \"Strings\\schedules\\Marnie:marriage_Fri.000\"/1700 Saloon 1 22 1 marnie_drink \"Strings\\schedules\\Marnie:marriage_Fri.001\"/2200 BusStop -1 23 3",
+				"marriage_Tue": "1000 SeedShop 23 16 2/1300 SeedShop 28 17 2 marnie_exercise/1600 SeedShop 25 15 3 \"Strings\\schedules\\Marnie:Tue.000\"/1810 BusStop -1 23 3",
+				"marriage_Thu": "GOTO marriage_Mon",
+				"marriage_Sat": "GOTO marriage_Mon",
+				"marrage_Sun": "GOTO marriage_Mon",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/AnimalShop",
+			"Entries": {
+				"282815607/D Marnie/f Marnie 2000/t 1400 1800/k 282815608": "continue/24 15/farmer -100 -100 0 Marnie 24 15 0 Lewis 15 18 1/skippable/pause 500/move Marnie 2 0 0/pause 1500/move Marnie -2 0 0/pause 1000/move Lewis 5 0 0/emote Marnie 16/faceDirection Marnie 2/pause 100/speak Marnie \"{{i18n:Marnie8hearts.01}}\"/move Lewis 0 -2 1/speak Lewis \"{{i18n:Marnie8hearts.02}}\"/pause 300/emote Marnie 8/move Marnie 0 1 3/move Marnie -3 0 3/speak Marnie \"{{i18n:Marnie8hearts.03}}\"/faceDirection Lewis 2/pause 500/speak Lewis \"{{i18n:Marnie8hearts.04}}\"/emote Marnie 16/speak Marnie \"{{i18n:Marnie8hearts.05}}\"/pause 500/faceDirection Lewis 1/pause 500/speak Lewis \"{{i18n:Marnie8hearts.06}}\"/pause 500/faceDirection Lewis 2/emote Lewis 12/speak Lewis \"{{i18n:Marnie8hearts.07}}\"/pause 1000/emote Marnie 60/speak Marnie \"{{i18n:Marnie8hearts.08}}\"/pause 1000/faceDirection Lewis 1/pause 500/speak Lewis \"{{i18n:Marnie8hearts.09}}\"/pause 500/faceDirection Marnie 1/pause 1500/speak Marnie \"{{i18n:Marnie8hearts.10}}\"/pause 1500/speak Lewis \"{{i18n:Marnie8hearts.11}}\"/pause 1500/faceDirection Marnie 3/pause 500/speak Marnie \"{{i18n:Marnie8hearts.12}}\"/pause 2000/faceDirection Lewis 3/pause 1000/speak Lewis \"{{i18n:Marnie8hearts.13}}\"/pause 1000/speak Marnie \"{{i18n:Marnie8hearts.14}}\"/pause 500/emote Lewis 12/speak Lewis \"{{i18n:Marnie8hearts.15}}\"/pause 500/speak Marnie \"{{i18n:Marnie8hearts.16}}\"/pause 1500/move Lewis 0 2 3/move Lewis -7 0 3/warp Lewis -100 -100/pause 2000/move Marnie 4 0 1/pause 500/emote Marnie 40/warp farmer 13 18 1/pause 2000/move farmer 7 0 0/emote Marnie 16/faceDirection Marnie 3/speak Marnie \"{{i18n:Marnie8hearts.17}}\"/question fork1 \"#Are you okay?#Okay. I'll come back later.\"/fork noComfortMarnie/pause 500/speak Marnie \"{{i18n:Marnie8hearts.18}}\"/pause 300/move farmer 0 -2 1/move farmer 4 0 1/pause 500/speak Marnie \"{{i18n:Marnie8hearts.19}}\"/speak Marnie \"$q -1 null \"#{{i18n:Marnie8hearts.20}}#$r -1 0 event_marnieBreakup1#{{i18n:Marnie8hearts.21}}#$r -1 0 event_marnieBreakup2#{{i18n:Marnie8hearts.22}}#$r -1 0 event_marnieBreakup3#{{i18n:Marnie8hearts.23}}\"/pause 1500/emote Marnie 60/pause 800/speak Marnie \"{{i18n:Marnie8hearts.24}}\"/pause 2000/globalFade/viewport -1000 -1000/pause 3000/friendship Lewis -250/end dialogue Marnie \"{{i18n:Marnie8hearts.25}}\"/",
+				"noComfortMarnie": "pause 500/move Marnie -2 0 2/move Marnie 0 2 3/move Marnie -2 0 3/move farmer 0 -1 2/move Marnie -8 0 0/warp Marnie 12 4 3/friendship Marnie -250/end warpOut",
+			},		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Forest",
+			"Entries": {
+ 				"282815609/e 282815608/D Marnie/f Marnie 2000/t 800 1200/w sunny": "jaunty/84 18/farmer 68 16 1 Marnie 84 16 0/skippable/pause 2000/move farmer 10 0 1/pause 100/emote Marnie 16/faceDirection Marnie 3/pause 1000/speak Marnie \"{{i18n:Marnie8heartsB.01}}\"/move farmer 5 0 1/speak Marnie \"{{i18n:Marnie8heartsB.02}}\"/speak Marnie \"$q -1 null \"#{{i18n:Marnie8heartsB.03}}#$r -1 0 event_marnieMorning1#{{i18n:Marnie8heartsB.04}}#$r -1 0 event_marnieMorning2#{{i18n:Marnie8heartsB.05}}#$r -1 0 event_marnieMorning3#{{i18n:Marnie8heartsB.06}}\"/pause 1000/speak Marnie \"{{i18n:Marnie8heartsB.07}}\"/faceDirection Marnie 2/pause 1500/speak Marnie \"{{i18n:Marnie8heartsB.08}}\"/pause 2000/faceDirection Marnie 3/speak Marnie \"{{i18n:Marnie8heartsB.09}}\"/pause 800/speak Marnie \"{{i18n:Marnie8heartsB.10}}\"/pause 1000/speak Marnie \"{{i18n:Marnie8heartsB.11}}\"/question fork1 \"#Oh... I'm sorry.#That's not true. We were never that close.\"/fork notThatCloseB/pause 1000/speak Marnie \"{{i18n:Marnie8heartsB.12}}\"/pause 500/speak Marnie \"{{i18n:Marnie8heartsB.13}}\"/pause 500/speak Marnie \"{{i18n:Marnie8heartsB.14}}\"/pause 100/speak Marnie \"$q -1 null \"#{{i18n:Marnie8heartsB.15}}#$r -1 0 event_loveLewis1#{{i18n:Marnie8heartsB.16}}#$r -1 0 event_loveLewis2#{{i18n:Marnie8heartsB.17}}#$r -1 0 event_loveLewis3#{{i18n:Marnie8heartsB.18}}#$r -1 0 event_loveLewis4#{{i18n:Marnie8heartsB.19}}\"/pause 1500/faceDirection Marnie 1/pause 2000/faceDirection Marnie 3/pause 500/speak Marnie \"{{i18n:Marnie8heartsB.20}}\"/pause 1000/speak Marnie \"{{i18n:Marnie8heartsB.21}}\"/pause 500/speak Marnie \"{{i18n:Marnie8heartsB.22}}\"/friendship Marnie 50/end warpOut",
+				"notThatCloseB": "emote Marnie 12/pause 1000/speak Marnie \"{{i18n:8hearts.notThatCloseB.01}}\"/pause 1500/speak Marnie \"{{i18n:8hearts.notThatCloseB.02}}\"/friendship Marnie -50/end warpOut",
+  				"282815612/D Marnie/f Marnie 2500/t 2000 2400": "nightTime/-1000 -1000/farmer 119 25 3 Marnie -100 -100 1/viewport -1000 -1000/changeToTemporaryMap forestEvent/viewport -1000 -1000/pause 500/viewport 99 19 true/move farmer -20 0 3/pause 1000/faceDirection farmer 0/emote farmer 8/pause 500/move farmer 0 -2 0/playSound cow/pause 1000/emote farmer 16/speed farmer 5/move farmer 0 -7 0/warp farmer -101 -101/playSound doorClose/pause 500/globalFade/viewport -1000 -1000/changeToTemporaryMap MarnieBarn/viewport -1000 -1000/warp Marnie 5 5/faceDirection Marnie 3/addTemporaryActor Buttercup 32 32 3 5 2 true/viewport 8 5 true/pause 1000/playSound cow/emote Marnie 28/pause 1500/warp farmer 11 13/move farmer 0 -5 3/move farmer -3 0 0/emote Marnie 16/faceDirection Marnie 2/speak Marnie \"{{i18n:Marnie10hearts.01}}\"/emote farmer 16/move farmer 0 -3 3/move farmer -1 0 3/pause 500/speak Marnie \"{{i18n:Marnie10hearts.02}}\"/faceDirection Marnie 3/pause 2000/faceDirection Marnie 1/speak Marnie \"{{i18n:Marnie10hearts.03}}\"/pause 500/speak Marnie \"{{i18n:Marnie10hearts.04}}\"/question fork1 \"{{i18n:Marnie10hearts.05}}#{{i18n:Marnie10hearts.06}}#{{i18n:Marnie10hearts.07}}#\"/fork noButtermilk/emote Marnie 56/speak Marnie \"{{i18n:Marnie10hearts.08}}\"/pause 500/speed farmer 3/move farmer 0 -1 3/move farmer -1 0 3/faceDirection Marnie 3/pause 300/emote Buttercup 20/playSound cow/speak Marnie \"{{i18n:Marnie10hearts.09}}\"/pause 2000/globalFade/viewport -1000 -1000/playSound cow/speak Marnie \"{{i18n:Marnie10hearts.10}}\"/pause 1000/playSound cow/pause 2000/showFrame Buttercup 1/viewport 8 5 true/emote Buttercup 20/emote Marnie 56/emote farmer 56/faceDirection Marnie 0/speak Marnie \"{{i18n:Marnie10hearts.11}}\"/faceDirection farmer 2/emote farmer 28/speak Marnie \"{{i18n:Marnie10hearts.12}}\"/move Marnie 1 0 0/move Marnie 0 -1 3/faceDirection farmer 1/emote farmer 8/speak Marnie \"{{i18n:Marnie10hearts.13}}\"/emote farmer 28/pause 500/speak Marnie \"{{i18n:Marnie10hearts.14}}\"/pause 2000/speak Marnie \"{{i18n:Marnie10hearts.15}}\"/pause 500/speak Marnie \"{{i18n:Marnie10hearts.16}}\"/question fork1 \"{{i18n:Marnie10hearts.17}}#{{i18n:Marnie10hearts.18}}#{{i18n:Marnie10hearts.19}}#\"/fork rejectMarnie/speak Marnie \"{{i18n:Marnie10hearts.20}}\"/emote farmer 56/emote Marnie 56/speak Marnie \"{{i18n:Marnie10hearts.21}}\"/pause 1000/playSound cow/emote Buttercup 20/pause 200/speak Marnie \"{{i18n:Marnie10hearts.22}}\"/pause 500/speak Marnie \"{{i18n:Marnie10hearts.23}}\"/emote farmer 56/emote Marnie 20/pause 2000/globalFade/viewport -1000 -1000/changeLocation Forest/viewport -1000 -1000/friendship Marnie 50/end position 99 23",	
+			},		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Temp",
+			"Entries": {
+				"noButtermilk": "pause 500/emote Marnie 40/pause 500/speak Marnie \"{{i18n:event-noButtermilk.01}}\"/pause 1500/playSound cow/emote Marnie 16/faceDirection Marnie 3/speak Marnie \"{{i18n:event-noButtermilk.02}}\"/pause 500/playSound cow/emote farmer 40/globalFade/viewport -1000 -1000/changeLocation Forest/viewport -1000 -1000/friendship Marnie -250/end position 99 23",
+				"rejectMarnie": "pause 1000/emote Marnie 40/pause 500/speak Marnie \"{{i18n:event-rejectMarnie.01}}\"/pause 1500/playSound cow/emote Marnie 16/move Marnie 0 1 3/move Marnie -1 0 3/speak Marnie \"{{i18n:event-rejectMarnie.02}}\"/pause 2000/speak Marnie \"{{i18n:event-rejectMarnie.03}}\"/pause 500/emote farmer 40/globalFade/viewport -1000 -1000/changeLocation Forest/viewport -1000 -1000/friendship Marnie -250/end position 99 23",
+			},		
+		},
+	]
+}

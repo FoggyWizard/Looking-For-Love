@@ -1,0 +1,61 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Fields": {
+				"Linus": {
+					5: "datable",
+				}
+			},
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Dialogue/MarriageDialogueLinus",
+			"FromFile": "assets/blank.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "{{FirstValidFile: assets/Linus/{{language}}.json, assets/Linus/default.json }}",
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Linus": "LinusSpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/LinusSpouseRoom",
+            "FromFile": "assets/Maps/spouseroomLinus.tmx"
+        },
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Linus",
+			"Entries": {
+				"marriage_Wed": "830 Railroad 20 57 2 \"Strings\\schedules\\Linus:marriage_Wed.000\"/1300 Mountain 25 5 1 \"Strings\\schedules\\Linus:marriage_Wed.001\"/1700 BusStop -1 23 3",
+				"marriage_Sat": "800 Forest 85 52 0 \"Strings\\schedules\\Linus:marriage_Sat.000\"/1200 96 52 2 \"Strings\\schedules\\Linus:marriage_Sat.000\"/1400 Forest 48 27 3 \"Strings\\schedules\\Linus:marriage_Sat.001\"/1700 Forest 68 -1 2"
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"282815615/D Linus/f Linus 2500/e 282815613/w sunny/x linusSleepover" : "null",
+			},		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Mountain",
+			"Entries": {
+				"282815613/D Linus/f Linus 2000/w sunny/t 1400 2100": "continue/29 9/farmer 23 20 0 Linus 30 9 3 Jas -100 -100 1 Vincent -101 -101 1/specificTemporarySprite linusCampfire/pause 1000/move farmer 0 -11 0/emote Linus 16/speak Linus \"{{i18n:Linus8hearts.01}}\"/faceDirection farmer 1/emote farmer 32/pause 500/speak Linus \"{{i18n:Linus8hearts.02}}\"/question fork1 \"#I would love to.#I'm too busy, sorry.\"/fork noDinner/pause 200/speak Linus \"{{i18n:Linus8hearts.03}}\"/pause 200/emote farmer 32/move farmer 5 0 0/move farmer 0 -1 1/move farmer 1 0 0/move farmer 0 -1 0/warp farmer 2 3/globalFade/viewport -1000 -1000/changeLocation Tent/viewport -1000 -1000/warp Linus -103 -103/faceDirection farmer 2/viewport 2 3 true/pause 1500/emote farmer 40/pause 2000/faceDirection Linus 0/warp Linus 2 5/move Linus 0 -1 0/speak Linus \"{{i18n:Linus8hearts.04}}\"/pause 500/emote farmer 32/pause 500/move Linus 1 0 0/move Linus 0 -1 2/pause 1000/speak Linus \"$q -1 null \"#{{i18n:Linus8hearts.05}}#$r -1 0 event_dinner1#{{i18n:Linus8hearts.06}}#$r -1 0 event_dinner2#{{i18n:Linus8hearts.07}}\"/pause 2000/speak Linus \"{{i18n:Linus8hearts.08}}\"/playSound drumkit1/playSound drumkit1/pause 200/playSound drumkit1/playSound drumkit1/emote Linus 16/playSound drumkit1/playSound drumkit1/playSound drumkit1/message \"{{i18n:Linus8hearts.09}}\"/emote farmer 16/playSound drumkit1/playSound drumkit1/playSound drumkit1/speed farmer 4/move farmer 0 2 2/warp farmer 29 7/globalFade/viewport -1000 -1000/changeLocation Mountain/viewport -1000 -1000/faceDirection farmer 2/warp Jas 23 8/faceDirection Jas 1/warp Vincent 24 7/faceDirection Vincent 1/viewport 27 9 true/move farmer 0 1 3/move farmer -2 0 3/emote Jas 16/emote Vincent 16/pause 200/speak Vincent \"{{i18n:Linus8hearts.10}}\"/speak Jas \"{{i18n:Linus8hearts.11}}\"/speak Vincent \"{{i18n:Linus8hearts.12}}\"/pause 500/warp Linus 29 7/move Linus 0 1 3/move Linus -1 0 2/move Linus 0 1 3/move Linus -3 0 0/emote Vincent 16/emote Jas 16/speak Vincent \"{{i18n:Linus8hearts.13}}\"/speak Jas \"{{i18n:Linus8hearts.14}}\"/question fork1 \"{{i18n:Linus8hearts.15}}#{{i18n:Linus8hearts.16}}#{{i18n:Linus8hearts.17}}#\"/fork terroristsWin/pause 200/speak Jas \"{{i18n:Linus8hearts.18}}\"/speak Vincent \"{{i18n:Linus8hearts.19}}\"/speed Jas 4/move Jas -10 0 3/warp Jas -110 -100/speed Vincent 5/move Vincent -11 0 3/warp Vincent -111 -100/pause 2000/speed farmer 3/move farmer 0 1 3/move farmer -1 0 3/pause 500/faceDirection Linus 1/speak Linus \"{{i18n:Linus8hearts.20}}\"/pause 500/speak Linus \"{{i18n:Linus8hearts.21}}\"/pause 2000/speak Linus \"{{i18n:Linus8hearts.22}}\"/emote farmer 32/pause 1500/globalFade/viewport -1000 -1000/end position 23 9",
+				"noDinner": "pause 200/speak Linus \"{{i18n:8hearts.noDinner.01}}\"/pause 1000/end position 23 9",
+  				"terroristsWin": "speed Jas 4/move Jas -10 0 3/warp Jas -110 -100/speed Vincent 5/move Vincent -11 0 3/warp Vincent -111 -100/speak Linus \"{{i18n:8hearts.terroristsWin.01}}\"/pause 2000/speak Linus \"{{i18n:8hearts.terroristsWin.02}}\"/pause 1500/move Linus 3 0 1/speak Linus \"{{i18n:8hearts.terroristsWin.03}}\"/pause 500/speak Linus \"{{i18n:8hearts.terroristsWin.04}}\"/end warpOut",
+			    "282815614/D Linus/f Linus 2500/e 282815615/w sunny/t 1700 2100/n linusSleepover": "nightTime/29 9/farmer 23 20 0 Linus 30 9 3/specificTemporarySprite linusCampfire/pause 1000/move farmer 0 -11 1/emote Linus 16/speak Linus \"{{i18n:Linus10hearts.01}}\"/emote farmer 32/move farmer 5 0 1/emote Linus 32/speak Linus \"{{i18n:Linus10hearts.02}}\"/question fork1 \"#I would love to.#Sorry, I'm just too busy.\"/fork noSleepover/emote Linus 56/speak Linus \"{{i18n:Linus10hearts.03}}\"/pause 100/emote farmer 32/emote Linus 32/playSound crafting/pause 1000/playSound crafting/pause 500/speak Linus \"{{i18n:Linus10hearts.04}}\"/message \"{{i18n:Linus10hearts.05}}\"/pause 500/emote farmer 56/message \"{{i18n:Linus10hearts.06}}\"/pause 500/speak Linus \"{{i18n:Linus10hearts.07}}\"/pause 300/emote farmer 32/emote Linus 32/globalFade/viewport -1000 -1000/ambientLight 0 0 0/warp farmer 29 10/faceDirection farmer 0/viewport 29 9 true/pause 2000/speak Linus \"{{i18n:Linus10hearts.08}}\"/pause 100/emote farmer 8/pause 500/speak Linus \"{{i18n:Linus10hearts.09}}\"/speak Linus \"$q -1 null \"#{{i18n:Linus10hearts.10}}#$r -1 0 event_embarrassing1#{{i18n:Linus10hearts.11}}#$r -1 0 event_embarrassing2#{{i18n:Linus10hearts.12}}\"/pause 1000/speak Linus \"{{i18n:Linus10hearts.13}}\"/pause 500/speak Linus \"{{i18n:Linus10hearts.14}}\"/pause 100/emote farmer 16/pause 200/question fork1 \"#I love you, too.#I'm sorry... I don't feel the same way.\"/fork rejectLinus/speak Linus \"{{i18n:Linus10hearts.15}}\"/pause 2000/speak Linus \"{{i18n:Linus10hearts.16}}\"/globalFade/viewport -1000 -1000/changeToTemporaryMap Tent2/viewport -1000 -1000/warp farmer 2 3/faceDirection farmer 1/warp Linus 4 3/faceDirection Linus 3/viewport 2 3 true/pause 500/speak Linus \"{{i18n:Linus10hearts.17}}\"/pause 100/move farmer 1 0 1/emote farmer 32/emote Linus 32/pause 2000/globalFade/viewport -1000 -1000/changeLocation Mountain/viewport -1000 -1000/end position 29 8",
+				"noSleepover": "pause 200/speak Linus \"{{i18n:10hearts.noSleepover.01}}\"/pause 1000/friendship Linus -125/end warpOut",
+				"rejectLinus": "pause 500/speak Linus \"{{i18n:10hearts.rejectLinus.01}}\"/pause 500/speak Linus \"{{i18n:10hearts.rejectLinus.02}}\"/pause 1000/speak Linus \"{{i18n:10hearts.rejectLinus.03}}\"/pause 2000/friendship Linus -250/end warpOut",				
+			},		
+		},
+	]
+}

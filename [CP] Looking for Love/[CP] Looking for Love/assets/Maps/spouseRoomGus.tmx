@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.2" tiledversion="1.3.3" orientation="orthogonal" renderorder="right-down" width="7" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="32">
+ <tileset firstgid="1" name="indoor" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+  <tile id="936">
+   <animation>
+    <frame tileid="936" duration="250"/>
+    <frame tileid="1864" duration="250"/>
+    <frame tileid="1866" duration="250"/>
+    <frame tileid="1868" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="937">
+   <animation>
+    <frame tileid="937" duration="250"/>
+    <frame tileid="1865" duration="250"/>
+    <frame tileid="1867" duration="250"/>
+    <frame tileid="1869" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="BackSpouse" width="7" height="10">
+  <data encoding="csv">
+331,331,331,331,331,331,0,
+331,331,331,331,331,331,0,
+331,331,331,331,331,331,0,
+576,575,576,575,576,575,0,
+608,1531,1533,1534,1536,607,0,
+640,1563,1564,1565,1568,639,0,
+608,1595,1596,1567,1600,607,0,
+640,1627,1629,1630,1632,639,0,
+608,607,608,607,608,607,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="2" name="AlwaysFront" width="7" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <layer id="3" name="AlwaysFrontSpouse" width="7" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="BackSpouse"/>
+ <layer id="5" name="BuildingsSpouse" width="7" height="10">
+  <data encoding="csv">
+155,0,0,0,0,156,1,
+187,81,81,81,81,188,1,
+219,113,113,113,113,220,1,
+644,645,0,519,520,535,1,
+0,0,0,0,555,556,1,
+0,0,0,0,587,588,1,
+0,0,0,0,619,620,1,
+0,0,0,0,0,0,1,
+0,0,0,0,0,453,1,
+1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="6" name="BuildingsSpouse">
+  <object id="4" name="TileData" x="0" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Spouseroom.2&quot;"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="16" y="48" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message &quot;Spouserooom.2&quot;"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="7" name="FrontSpouse" width="7" height="10">
+  <data encoding="csv">
+0,182,214,257,178,0,69,
+580,581,0,289,0,0,69,
+612,613,0,487,488,503,69,
+0,0,0,0,0,0,69,
+0,0,0,0,0,0,69,
+0,0,0,0,0,0,69,
+0,0,0,0,0,0,69,
+0,0,0,0,0,1347,69,
+166,166,166,166,166,167,168,
+0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="FrontSpouse"/>
+</map>

@@ -1,0 +1,67 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Fields": {
+				"Gus": {
+					5: "datable",
+				}
+			},
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Dialogue/MarriageDialogueGus",
+			"FromFile": "assets/blank.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "{{FirstValidFile: assets/Gus/{{language}}.json, assets/Gus/default.json }}",
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Gus": "GusSpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/GusSpouseRoom",
+            "FromFile": "assets/Maps/spouseroomGus.tmx"
+        },
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Gus",
+			"Entries": {
+				"marriage_Fri": "1000 Saloon 10 18 2 \"Strings\\schedules\\Gus:Marriage_Fri.000\"/1400 Saloon 14 18 2 gus_clean/1700 Saloon 10 18 0 \"Strings\\schedules\\Gus:Marriage_Fri.001\"/2330 BusStop -1 23 3",
+				"marriage_Sat": "1400 Saloon 10 18 2 \"Strings\\schedules\\Gus:Marriage_Sat.000\"/2200 BusStop -1 23 3",
+				"marriage_Sun": "1000 Saloon 10 18 2 \"Strings\\schedules\\Gus:Marriage_Sun.000\"/1500 BusStop -1 23 3",
+				"marriage_Mon": "800 SeedShop 13 23 2 \"Strings\\schedules\\Gus:Marriage_Mon.000\"/1130 Saloon 10 18 2 \"Strings\\schedules\\Gus:Marriage_Mon.001\"/1500 Saloon 14 18 2 gus_clean/1600 BusStop -1 23 3"
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Saloon",
+			"Entries": {
+  				"282815604/D Gus/f Gus 2000/t 1200 1630": "gusviolin/32 7/farmer 31 15 0 Gus 35 7 1 Harvey -100 -100 0/skippable/showFrame Gus 40/animate Gus false false 100 40 40 40 40 40 40 41 41 41 42 42 42 43 43 42 42 42 42/move farmer 0 -6 0/pause 1000/showFrame Gus 4/pause 500/showFrame Gus 12/speak Gus \"{{i18n:Gus8hearts.01}}\"/move farmer 0 -2 1/move farmer 3 0 1/pause 1500/emote farmer 16/message \"{{i18n:Gus8hearts.02}}\"/pause 800/speak Gus \"{{i18n:Gus8hearts.03}}\"/pause 1500/message \"{{i18n:Gus8hearts.04}}\"/pause 500/question fork1 \"#It's deep. Let me take you to Dr. Harvey.#It looks bad. You should go see a doctor.\"/fork doctorAlone/pause 500/showFrame Gus 0/pause 300/showFrame Gus 12/pause 500/speak Gus \"{{i18n:Gus8hearts.05}}\"/globalFade/viewport -1000 -1000/changeToTemporaryMap Hospital/viewport -1000 -1000/warp farmer 20 11 2/warp Gus 20 12 1/warp Harvey 21 12 3/playMusic Hospital_Ambient/faceDirection farmer 2/showFrame Gus 4/faceDirection Harvey 3/viewport 20 10 true/pause 1500/speak Harvey \"{{i18n:Gus8hearts.06}}\"/pause 300/move Harvey 0 -1 3/faceDirection farmer 1/speak Harvey \"{{i18n:Gus8hearts.07}}\"/move Harvey 1 0 2/speak Harvey \"{{i18n:Gus8hearts.08}}\"/faceDirection farmer 2/move Harvey 0 -3 3/move Harvey -7 0 0/move Harvey 0 -1 3/move Harvey -5 0 2/move Harvey 0 3 3/showFrame Gus 8/move Harvey -5 0 0/move Gus 1 0 0/move Gus 0 -1 3/faceDirection farmer 1/speak Gus \"{{i18n:Gus8hearts.09}}\"/emote Gus 32/pause 500/speak Gus \"{{i18n:Gus8hearts.10}}\"/emote farmer 28/globalFade/viewport -1000 -1000/end warpOut",		  		"noPicnic": "pause 500/speak Gus \"{{i18n:10hearts.noPicnic.01}}\"/pause 500/move Gus 0 1 1/move Gus 4 0 1/pause 1000/faceDirection Gus 3/speak Gus \"{{i18n:10hearts.noPicnic.02}}\"/pause 300/move Gus 11 0 1/warp Gus -100 -100/friendship Gus -250/end",
+		 		"doctorAlone": "pause 500/speak Gus \"{{i18n:8hearts.doctorAlone.01}}\"/showFrame Gus 4/animate Gus false false 100 40 40 40 40 40 40 41 41 41 42 42 42 43 43 42 42 42 42/end warpOut",
+				"282815605/D Gus/f Gus 2500/t 1200 1600": "jaunty/14 18/farmer -100 -100 0 Gus 17 18 2/skippable/animate Gus false false 100 18 18 19 19 20 20 19 19/playSound doorClose/warp farmer 14 24 0/move farmer 0 -3 1/move farmer 3 0 0/move farmer 0 -1 0/emote Gus 16/speak Gus \"{{i18n:Gus10hearts.01}}\"/emote farmer 8/pause 500/speak Gus \"{{i18n:Gus10hearts.02}}\"/speak Gus \"$q -1 null \"#{{i18n:Gus10hearts.03}}#$r -1 0 event_fruit1#{{i18n:Gus10hearts.04}}#$r -1 0 event_fruit2#{{i18n:Gus10hearts.05}}#$r -1 0 event_fruit3#{{i18n:Gus10hearts.06}}#$r -1 0 event_fruit4#{{i18n:Gus10hearts.07}}\"/speak Gus \"{{i18n:Gus10hearts.08}}\"/emote Gus 56/pause 500/speak Gus \"{{i18n:Gus10hearts.09}}\"/pause 500/speak Gus \"{{i18n:Gus10hearts.10}}\"/end dialogue Gus \"{{i18n:Gus10hearts.11}}\"/",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+  				"282815606/D Gus/e 282815605/f Gus 2500/t 1800 2200/w sunny": "continue/64 15/farmer 64 15 2 Gus 64 16 0/emote Gus 16/speak Gus \"{{i18n:Gus10hearts2.01}}\"/question fork1 \"#Sounds great! I'm in.#No thanks.\"/fork noPicnic/emote Gus 56/speak Gus \"{{i18n:Gus10hearts2.02}}\"/pause 500/globalFade/viewport -1000 -1000/changeToTemporaryMap gusPicnic/viewport -1000 -1000/warp farmer 15 13/warp Gus 14 13/playMusic gusviolin/faceDirection farmer 2/faceDirection Gus 2/viewport 14 12 true/pause 2000/speak Gus \"{{i18n:Gus10hearts2.03}}\"/pause 1000/speak Gus \"{{i18n:Gus10hearts2.04}}\"/faceDirection Gus 1/pause 1000/faceDirection Gus 2/pause 1500/speak Gus \"{{i18n:Gus10hearts2.05}}\"/emote farmer 32/pause 1000/speak Gus \"{{i18n:Gus10hearts2.06}}\"/pause 1500/emote Gus 60/faceDirection Gus 1/pause 500/speak Gus \"{{i18n:Gus10hearts2.07}}\"/faceDirection farmer 3/pause 1000/speak Gus \"{{i18n:Gus10hearts2.08}}\"/faceDirection Gus 3/emote Gus 60/pause 1500/faceDirection Gus 1/showFrame Gus 23/pause 800/showFrame Gus 4/pause 1500/emote Gus 60/emote farmer 60/pause 600/speak Gus \"{{i18n:Gus10hearts2.09}}\"/question fork1 \"#I feel the same way.#I'm sorry... I don't feel that way about you.\"/fork rejectGus/speak Gus \"{{i18n:Gus10hearts2.10}}\"/pause 1500/speak Gus \"{{i18n:Gus10hearts2.11}}\"/emote Gus 20/emote farmer 20/pause 2000/faceDirection farmer 2/faceDirection Gus 2/pause 1500/globalFade/viewport -1000 -1000/changeLocation Farm/end position 64 16",
+		  		"noPicnic": "pause 500/speak Gus \"{{i18n:10hearts.noPicnic.01}}\"/pause 500/move Gus 0 1 1/move Gus 4 0 1/pause 1000/faceDirection Gus 3/speak Gus \"{{i18n:10hearts.noPicnic.02}}\"/pause 300/move Gus 11 0 1/warp Gus -100 -100/friendship Gus -250/end",
+			},		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Temp",
+			"Entries": {
+ 				"rejectGus": "pause 500/speak Gus \"{{i18n:event-rejectGus.01}}\"/pause 1500/speak Gus \"{{i18n:event-rejectGus.02}}\"/faceDirection Gus 2/pause 2000/emote Gus 40/pause 500/speak Gus \"{{i18n:event-rejectGus.03}}\"/pause 2000/globalFade/viewport -1000 -1000/changeLocation Farm/friendship Gus -500/end position 64 16",			},		
+		},
+	]
+}

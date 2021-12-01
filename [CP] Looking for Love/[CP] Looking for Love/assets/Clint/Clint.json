@@ -1,0 +1,88 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Fields": {
+				"Clint": {
+					5: "datable",
+				}
+			},
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Dialogue/MarriageDialogueClint",
+			"FromFile": "assets/blank.json",
+		},
+		{
+			"Action": "Load",
+			"Target": "Data/Events/Blacksmith",
+			"FromFile": "assets/blank.json",
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+			},
+		},
+		{
+			"Action": "Include",
+			"FromFile": "{{FirstValidFile: assets/Clint/{{language}}.json, assets/Clint/default.json }}",
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Clint": "ClintSpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/ClintSpouseRoom",
+            "FromFile": "assets/Maps/spouseroomClint.tmx"
+        },
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Clint",
+			"Entries": {
+				"marriage_Mon": "700 Blacksmith 3 13 2 \"Strings\\schedules\\Clint:marriage_Mon.000\"/1700 BusStop -1 23 3",
+				"marriage_Tue": "GOTO marriage_Mon",
+				"marriage_Wed": "700 Blacksmith 3 13 2 \"Strings\\schedules\\Clint:marriage_Wed.000\"/1700 BusStop -1 23 3",
+				"marriage_Thu": "GOTO marriage_Wed",
+				"marriage_Fri": "850 CommunityCenter 62 14 0 square_3_1_0/1700 Saloon 19 23 3/2400 BusStop -1 23 3",
+				"marriage_Sat": "700 Blacksmith 3 13 2 \"Strings\\schedules\\Clint:marriage_Fri.000\"/1500 BusStop -1 23 3",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Quests",
+			"Fields": {
+				"110": {
+					2: "{{i18n:ClintAmethystQuest.{{Relationship:Clint}} |default={{i18n:ClintAmethystQuest}} }}",
+					9: "{{i18n:EmilyResponse.{{Relationship:Clint}} |default={{i18n:EmilyResponse}} }}"
+				}
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Blacksmith",
+			"Entries": {
+				"282815601/f Clint 2000/t 900 1700": "continue/7 13/farmer 5 18 0 Clint 3 13 2 Emily 5 15 0/skippable/move Emily 0 -2 3/speak Emily \"{{i18n:Clint8hearts.01}}\"/faceDirection Clint 1/speak Clint \"{{i18n:Clint8hearts.02}}\"/move Clint 0 -1 1/move Clint 5 0 2/faceDirection Emily 1/move Clint 0 1 1/move Clint 3 0 1/pause 1000/speak Clint \"{{i18n:Clint8hearts.03}}\"/move Emily 5 0 1/speak Emily \"{{i18n:Clint8hearts.04}}\"/faceDirection Clint 2/speak Clint \"{{i18n:Clint8hearts.05}}\"/pause 100/speak Emily \"{{i18n:Clint8hearts.06}}\"/speak Clint \"{{i18n:Clint8hearts.07}}\"/speak Emily \"{{i18n:Clint8hearts.08}}\"/faceDirection Clint 1/speak Clint \"{{i18n:Clint8hearts.09}}\"/speak Emily \"{{i18n:Clint8hearts.10}}\"/faceDirection Clint 2/move Emily -5 0 2/move Emily 0 4 2/speak Emily \"{{i18n:Clint8hearts.11}}\"/speak Clint \"{{i18n:Clint8hearts.12}}\"/faceDirection Emily 0/move Clint -3 0 0/move Clint 0 -1 3/move Clint -5 0 2/move Clint 0 1 2/pause 100/faceDirection Emily 2/speak Emily \"{{i18n:Clint8hearts.13}}\"/move farmer 1 0 3/move Emily 0 2 2/warp Emily -100 -100/pause 100/speak Clint \"{{i18n:Clint8hearts.14}}\"/move farmer -3 0 0/move farmer 0 -3 0/speak Clint \"$q -1 null \"#{{i18n:Clint8hearts.15}}#$r -1 0 event_blacksmith1#{{i18n:Clint8hearts.16}}#$r -1 0 event_blacksmith2#{{i18n:Clint8hearts.17}}#$r -1 0 event_blacksmith3#{{i18n:Clint8hearts.18}}\"/pause 100/speak Clint \"{{i18n:Clint8hearts.19}}\"/faceDirection Clint 1/speak Clint \"{{i18n:Clint8hearts.20}}\"/question fork1 \"#Yep.#I'm sorry.\"/fork sadClint/faceDirection Clint 2/speak Clint \"{{i18n:Clint8hearts.21}}\"/friendship Clint -100/end",
+				"sadClint": "pause 300/speak Clint \"{{i18n:8hearts.sadClint.01}}\"/faceDirection Clint 1/pause 100/speak Clint \"$q -1 null \"#{{i18n:8hearts.sadClint.02}}#$r -1 0 event_sadclint1#{{i18n:8hearts.sadClint.03}}#$r -1 0 event_sadclint2#{{i18n:8hearts.sadClint.04}}\"/pause 100/speak Clint \"{{i18n:8hearts.sadClint.05}}\"/end dialogue Clint \"{{i18n:8hearts.sadClint.06}}\"",
+				"282815603/e 282815602/f Clint 2500/t 900 1700": "continue/7 13/farmer 5 19 0 Clint 3 13 2/skippable/move farmer 0 -4 3/move farmer -2 0 0/speak Clint \"{{i18n:Clint10hearts2.01}}\"/move Clint 0 -1 1/move Clint 5 0 2/move Clint 0 3 1/move Clint 4 0 1/pause 1000/move farmer 6 0 1/pause 1000/speak Clint \"{{i18n:Clint10hearts2.02}}\"/faceDirection Clint 3/speak Clint \"{{i18n:Clint10hearts2.03}}\"/move Clint -2 0 3/pause 1500/speak Clint \"{{i18n:Clint10hearts2.04}}\"/message \"{{i18n:Clint10hearts2.05}}\"/pause 1200/speak Clint \"{{i18n:Clint10hearts2.06}}\"/faceDirection Clint 1/pause 500/faceDirection Clint 3/speak Clint \"{{i18n:Clint10hearts2.07}}\"/pause 500/question fork1 \"#I feel the same way.#I'm sorry... I don't feel the same.\"/fork rejectClint/pause 300/speak Clint \"{{i18n:Clint10hearts2.08}}\"/faceDirection Clint 2/pause 500/faceDirection Clint 3/speak Clint \"{{i18n:Clint10hearts2.09}}\"/showFrame Clint 42/pause 1500/showFrame Clint 12/pause 500/speak Clint \"{{i18n:Clint10hearts2.10}}\"/pause 300/speak Clint \"{{i18n:Clint10hearts2.11}}\"/pause 1000/end dialogue Clint \"{{i18n:Clint10hearts2.12}}\"",
+				"rejectClint": "pause 500/speak Clint \"{{i18n:10hearts.rejectClint.01}}\"/pause 300/speak Clint \"{{i18n:10hearts.rejectClint.02}}\"/move Clint 0 -2 3/move Clint -5 0 0/move Clint 0 -1 3/move Clint -2 0 2/move Clint 0 1 2/pause 500/friendship Clint -500/end dialogue Clint \"{{i18n:10hearts.rejectClint.03}}\"",
+			},
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"282817915/z spring summer fall/u 6/y 1/x emilythyst" : "null",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Mountain",
+			"Entries": {
+  				"282815602/D Clint/f Clint 2500/w sunny/t 1600 2300": "nightTime/54 8/farmer 41 10 0 Clint 47 7 1/skippable/pause 1000/move Clint 7 0 0/move Clint 0 -2 0/move farmer 0 -3 1/faceDirection Clint 2/pause 1000/showFrame Clint 35/emote Clint 16/jump Clint/showFrame Clint 0/move farmer 9 0 1/speak Clint \"{{i18n:Clint10hearts.01}}\"/pause 1500/speak Clint \"{{i18n:Clint10hearts.02}}\"/speak Clint \"$q -1 null \"#{{i18n:Clint10hearts.03}}#$r -1 0 event_iron1#{{i18n:Clint10hearts.04}}#$r -1 0 event_iron2#{{i18n:Clint10hearts.05}}#$r -1 0 event_iron3#{{i18n:Clint10hearts.06}}\"/pause 1000/speak Clint \"{{i18n:Clint10hearts.07}}\"/move Clint 0 2 3/speak Clint \"{{i18n:Clint10hearts.08}}\"/move farmer 0 1 0/move Clint -6 0 1/move farmer 0 -1 3/pause 500/speak Clint \"{{i18n:Clint10hearts.09}}\"/pause 1000/faceDirection Clint 2/pause 500/faceDirection Clint 1/pause 300/speak Clint \"{{i18n:Clint10hearts.10}}\"/move Clint -7 0 3/showFrame Clint 43/end",
+			}, 
+		},
+	]
+}

@@ -1,0 +1,17 @@
+﻿{
+	"Name": "[CKM] Looking for Love Kiss Fixes",
+	"Author": "Your name",
+	"Version": "1.0.0",
+	"Description": "Adds custom kissing configuration for my npc mod.",
+	"UniqueID": "foggy.LfLCKM",
+	"MinimumApiVersion": "3.0.0",
+	"UpdateKeys": [],
+	"Dependencies": [
+		{
+			"UniqueID": "foggy.LfL"
+		}
+	],
+	"ContentPackFor": {
+		"UniqueID": "Digus.CustomKissingMod"
+	}
+}

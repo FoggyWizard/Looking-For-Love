@@ -1,0 +1,5 @@
+{
+	"Entries": {
+						"tooRomantic": "pause 500/emote Pam 40/pause 500/speak Pam \"I think that was the point, eh...?$s\"/pause 1000/speak Pam \"Y'got a problem with it...?$s\"/pause 500/emote farmer 60/pause 300/faceDirection Pam 1/emote Pam 12/pause 200/speak Pam \"Well... I guess I'll get this mess cleaned up then.$4\"/pause 500/speak Pam \"Well, what're you waiting for? Get out if you don't wanna be here.$4\"/emote farmer 28/pause 1000/friendship Pam -500/friendship Penny -250/end warpOut",
+				},
+}

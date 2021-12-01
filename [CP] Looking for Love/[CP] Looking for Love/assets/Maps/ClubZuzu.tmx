@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" width="24" height="14" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="1">
+ <tileset firstgid="1" name="i" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="sh" tilewidth="16" tileheight="16" tilecount="140" columns="10">
+  <image source="samshowtiles.png" width="160" height="224"/>
+  <tile id="124">
+   <animation>
+    <frame tileid="124" duration="250"/>
+    <frame tileid="129" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="137">
+   <animation>
+    <frame tileid="137" duration="250"/>
+    <frame tileid="138" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <tileset firstgid="2317" name="zz" tilewidth="16" tileheight="16" tilecount="180" columns="12">
+  <image source="clubZuzuTiles.png" width="192" height="240"/>
+  <tile id="0">
+   <animation>
+    <frame tileid="0" duration="250"/>
+    <frame tileid="1" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="9">
+   <animation>
+    <frame tileid="9" duration="250"/>
+    <frame tileid="9" duration="250"/>
+    <frame tileid="8" duration="250"/>
+    <frame tileid="8" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="10">
+   <animation>
+    <frame tileid="10" duration="250"/>
+    <frame tileid="34" duration="250"/>
+    <frame tileid="34" duration="250"/>
+    <frame tileid="34" duration="250"/>
+    <frame tileid="34" duration="250"/>
+    <frame tileid="34" duration="250"/>
+    <frame tileid="34" duration="250"/>
+    <frame tileid="34" duration="250"/>
+    <frame tileid="34" duration="250"/>
+    <frame tileid="10" duration="250"/>
+    <frame tileid="10" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="11">
+   <animation>
+    <frame tileid="11" duration="250"/>
+    <frame tileid="35" duration="250"/>
+    <frame tileid="35" duration="250"/>
+    <frame tileid="35" duration="250"/>
+    <frame tileid="35" duration="250"/>
+    <frame tileid="35" duration="250"/>
+    <frame tileid="35" duration="250"/>
+    <frame tileid="35" duration="250"/>
+    <frame tileid="35" duration="250"/>
+    <frame tileid="11" duration="250"/>
+    <frame tileid="11" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="12">
+   <animation>
+    <frame tileid="12" duration="250"/>
+    <frame tileid="13" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="21">
+   <animation>
+    <frame tileid="21" duration="250"/>
+    <frame tileid="21" duration="250"/>
+    <frame tileid="20" duration="250"/>
+    <frame tileid="20" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="22">
+   <animation>
+    <frame tileid="22" duration="250"/>
+    <frame tileid="46" duration="250"/>
+    <frame tileid="46" duration="250"/>
+    <frame tileid="46" duration="250"/>
+    <frame tileid="46" duration="250"/>
+    <frame tileid="46" duration="250"/>
+    <frame tileid="46" duration="250"/>
+    <frame tileid="46" duration="250"/>
+    <frame tileid="46" duration="250"/>
+    <frame tileid="22" duration="250"/>
+    <frame tileid="22" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="23">
+   <animation>
+    <frame tileid="23" duration="250"/>
+    <frame tileid="47" duration="250"/>
+    <frame tileid="47" duration="250"/>
+    <frame tileid="47" duration="250"/>
+    <frame tileid="47" duration="250"/>
+    <frame tileid="47" duration="250"/>
+    <frame tileid="47" duration="250"/>
+    <frame tileid="47" duration="250"/>
+    <frame tileid="47" duration="250"/>
+    <frame tileid="23" duration="250"/>
+    <frame tileid="23" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="24">
+   <animation>
+    <frame tileid="24" duration="250"/>
+    <frame tileid="25" duration="250"/>
+    <frame tileid="25" duration="250"/>
+    <frame tileid="25" duration="250"/>
+    <frame tileid="24" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="26">
+   <animation>
+    <frame tileid="26" duration="250"/>
+    <frame tileid="27" duration="250"/>
+    <frame tileid="27" duration="250"/>
+    <frame tileid="26" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="32">
+   <animation>
+    <frame tileid="32" duration="250"/>
+    <frame tileid="33" duration="250"/>
+    <frame tileid="32" duration="250"/>
+    <frame tileid="32" duration="250"/>
+    <frame tileid="32" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="36">
+   <animation>
+    <frame tileid="36" duration="250"/>
+    <frame tileid="37" duration="250"/>
+    <frame tileid="37" duration="250"/>
+    <frame tileid="37" duration="250"/>
+    <frame tileid="36" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="38">
+   <animation>
+    <frame tileid="38" duration="250"/>
+    <frame tileid="39" duration="250"/>
+    <frame tileid="39" duration="250"/>
+    <frame tileid="38" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="44">
+   <animation>
+    <frame tileid="44" duration="250"/>
+    <frame tileid="45" duration="250"/>
+    <frame tileid="44" duration="250"/>
+    <frame tileid="44" duration="250"/>
+    <frame tileid="44" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="48">
+   <animation>
+    <frame tileid="48" duration="250"/>
+    <frame tileid="49" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="50">
+   <animation>
+    <frame tileid="50" duration="250"/>
+    <frame tileid="51" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="60">
+   <animation>
+    <frame tileid="60" duration="250"/>
+    <frame tileid="61" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="62">
+   <animation>
+    <frame tileid="62" duration="250"/>
+    <frame tileid="63" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="72">
+   <animation>
+    <frame tileid="72" duration="250"/>
+    <frame tileid="73" duration="250"/>
+    <frame tileid="73" duration="250"/>
+    <frame tileid="73" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="74">
+   <animation>
+    <frame tileid="74" duration="250"/>
+    <frame tileid="75" duration="250"/>
+    <frame tileid="75" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="84">
+   <animation>
+    <frame tileid="84" duration="250"/>
+    <frame tileid="85" duration="250"/>
+    <frame tileid="85" duration="250"/>
+    <frame tileid="85" duration="250"/>
+   </animation>
+  </tile>
+  <tile id="86">
+   <animation>
+    <frame tileid="86" duration="250"/>
+    <frame tileid="87" duration="250"/>
+    <frame tileid="87" duration="250"/>
+   </animation>
+  </tile>
+ </tileset>
+ <layer id="1" name="Back" width="24" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2482,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2484,0,
+0,2482,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2484,0,
+0,2482,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2483,2484,0,
+0,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,0,
+0,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,0,
+0,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,0,
+0,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,0,
+0,2357,2357,2357,2357,2357,2370,2371,2370,2371,2370,2371,2370,2371,2370,2371,2370,2371,2357,2357,2357,2357,2357,0,
+0,2357,2357,2357,2357,2357,2382,2382,2382,2382,2382,2382,2382,2382,2382,2382,2382,2382,2357,2357,2357,2357,2357,0,
+0,2357,2357,2357,2357,2357,2382,2382,2382,2382,2382,2382,2382,2382,2382,2382,2382,2382,2357,2357,2357,2357,2357,0,
+0,2357,2357,2357,2357,2357,2394,2395,2394,2395,2394,2395,2394,2395,2394,2395,2394,2395,2357,2357,2357,2357,2357,0,
+0,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,2357,0,
+0,0,0,0,0,0,0,0,0,0,0,2357,2357,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="24" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,2446,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2447,2448,0,
+0,2458,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2459,2460,0,
+2413,2470,1443,1444,0,0,2333,0,0,0,0,0,0,0,0,2331,0,2348,2323,0,1477,1478,2472,2413,
+1,0,0,0,0,2323,2345,2345,2346,2346,2346,2346,2346,2346,2346,2346,2346,2360,2323,0,0,0,0,1,
+1,0,0,0,0,0,2323,0,0,2323,2323,0,0,0,2307,2309,2323,0,0,0,0,0,0,1,
+1,0,0,0,0,0,0,0,2349,2326,0,0,0,2365,0,0,0,2367,0,0,0,0,0,1,
+1,0,0,0,0,2369,2343,0,2361,2338,0,0,0,2377,0,0,0,2379,2372,0,0,0,0,1,
+1,0,0,0,0,2381,2355,0,0,0,0,0,0,0,0,2341,0,0,2384,0,2327,2328,0,1,
+1,0,0,0,0,2381,0,0,0,0,0,0,0,0,0,2353,0,0,2384,0,2339,2340,0,1,
+1,0,0,0,0,2393,0,0,0,0,0,0,0,0,0,0,0,0,2396,0,0,0,0,1,
+1,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,0,0,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="24" height="14">
+  <data encoding="csv">
+2413,2414,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2415,2416,2413,
+2425,2434,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2436,2429,
+2437,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,1413,1414,0,2441,
+2437,0,1411,1412,0,0,2321,0,0,0,0,0,0,0,0,2319,0,2324,0,0,1445,1446,0,2441,
+2437,0,0,0,0,0,0,2334,2334,2334,2334,2334,2334,2334,2334,2335,2334,0,0,0,0,0,0,2441,
+2437,0,0,0,0,0,0,2302,2317,0,0,2389,0,0,2297,2299,0,0,0,0,0,0,0,2441,
+2437,0,0,2391,0,0,0,2312,2329,0,0,2401,0,0,0,0,0,0,0,0,0,0,0,2441,
+2437,0,0,2403,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2441,
+2437,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2301,0,0,0,0,0,2441,
+2437,0,0,0,0,0,2304,0,0,0,0,0,0,0,0,0,0,2311,0,0,0,0,0,2441,
+2437,0,0,0,0,0,2314,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2441,
+2437,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2441,
+2473,2474,2478,2478,2478,2478,2478,2478,2478,2478,2475,0,0,2476,2478,2478,2478,2478,2478,2478,2478,2478,2479,2480,
+2413,2413,2413,2413,2413,2413,2413,2413,2413,2413,2437,0,0,2441,2413,2413,2413,2413,2413,2413,2413,2413,2413,2413
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+</map>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" width="6" height="6" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="1">
+ <properties>
+  <property name="DayTiles" value="Back 2 2 1090 Back 3 2 1091 Buildings 2 0 1026 Buildings 3 0 1027 Back 2 5 1186"/>
+  <property name="NightTiles" value="Back 2 2 1122 Back 3 2 1184 Buildings 2 0 1188 Buildings 3 0 1189 Back 2 5 1154"/>
+  <property name="Warp" value="2 6 Mountain 29 7"/>
+ </properties>
+ <tileset firstgid="1" name="p" tilewidth="16" tileheight="16" tilecount="32" columns="4">
+  <image source="paths.png" width="64" height="128"/>
+ </tileset>
+ <tileset firstgid="33" name="sb" tilewidth="16" tileheight="16" tilecount="4" columns="2">
+  <image source="sleepingBagTiles.png" width="32" height="32"/>
+ </tileset>
+ <tileset firstgid="37" name="untitled tile sheet" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <layer id="1" name="Back" width="6" height="6">
+  <data encoding="csv">
+37,0,0,0,0,37,
+37,0,0,0,0,37,
+37,0,1127,1128,0,37,
+37,1158,1191,33,34,37,
+37,1190,1191,35,36,1191,
+37,37,1223,37,37,37
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="6" height="6">
+  <data encoding="csv">
+37,1062,1063,1064,1065,37,
+37,1094,1095,1096,1097,37,
+37,1126,0,0,1129,37,
+37,0,0,0,0,37,
+37,934,0,0,0,37,
+37,37,0,37,37,37
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings"/>
+ <layer id="5" name="Front" width="6" height="6">
+  <data encoding="csv">
+37,0,0,0,0,37,
+1093,0,0,0,0,1098,
+1157,0,0,0,0,1162,
+1157,902,0,0,0,1162,
+1189,1125,0,1130,1160,1194,
+0,1222,0,1224,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="6" height="6">
+  <data encoding="csv">
+0,0,0,0,0,0,
+0,0,0,0,0,0,
+0,0,8,0,0,0,
+0,8,5,6,8,0,
+0,0,7,0,0,0,
+0,0,7,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

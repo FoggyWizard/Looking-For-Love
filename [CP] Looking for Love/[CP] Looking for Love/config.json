@@ -1,0 +1,13 @@
+{
+  "Date": "Clint, Gus, Lewis, Linus, Marnie, Pam, Sandy, Willy",
+  "ClintOptions": "VanillaSprite, VanillaPort",
+  "GusOptions": "VanillaSprite, VanillaPort",
+  "LewisOptions": "VanillaSprite, VanillaPort",
+  "LinusOptions": "VanillaSprite, VanillaPort",
+  "MarnieOptions": "VanillaSprite, VanillaPort",
+  "PamOptions": "VanillaSprite, VanillaPort",
+  "SandyOptions": "VanillaSprite, VanillaPort",
+  "WillyOptions": "VanillaSprite, VanillaPort",
+  "WizardOptions": "VanillaSprite, VanillaPort",
+  "MarnieBarnLocation": "true"
+}

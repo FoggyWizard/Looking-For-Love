@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" width="12" height="10" tilewidth="16" tileheight="16" infinite="0" nextlayerid="7" nextobjectid="5">
+ <properties>
+  <property name="Warp" value="4 4 FishShop 4 4"/>
+ </properties>
+ <tileset firstgid="1" name="i" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <layer id="1" name="Back" width="12" height="10">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,
+1,1226,1226,1226,1226,1226,1226,1226,1226,1226,1226,1,
+1,1226,1226,1226,1226,1226,1226,1226,1226,1226,1226,1,
+1,1226,1226,1226,1226,1226,1226,1226,1226,1226,1226,1,
+1,264,265,264,265,264,265,264,265,264,265,1,
+1,232,233,249,250,251,233,232,233,232,233,1,
+1,264,265,281,282,283,265,264,265,264,265,1,
+1,232,233,232,233,232,233,232,233,232,233,1,
+1,264,265,264,265,264,265,264,265,264,265,1,
+1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="12" height="10">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,
+0,80,81,81,81,81,81,81,81,81,82,0,
+1,112,113,113,113,113,113,113,113,113,114,1,
+1,357,358,0,1160,0,0,898,499,500,501,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,321,322,0,0,0,0,0,0,0,887,1,
+1,402,0,0,0,0,0,0,887,888,889,1,
+1,0,0,0,0,0,0,0,0,0,0,1,
+1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="64" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Warp FishShop 4 4"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="128" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message It's a small, simple kitchen."/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="144" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message It's a small, simple kitchen."/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="160" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message It's a small, simple kitchen."/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="12" height="10">
+  <data encoding="csv">
+1,2,3,3,3,3,3,3,3,3,4,1,
+33,42,1388,1257,0,1225,0,1256,531,532,44,37,
+65,0,0,0,0,0,0,0,563,564,437,69,
+65,325,326,0,0,0,0,866,467,468,469,69,
+65,359,360,0,0,0,0,0,0,0,0,69,
+65,391,392,0,0,0,0,0,0,0,0,69,
+65,370,0,0,0,0,0,0,0,856,857,69,
+65,0,0,0,0,0,0,0,0,0,0,69,
+161,162,166,166,166,166,166,166,166,166,167,168,
+1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+</map>

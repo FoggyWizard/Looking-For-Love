@@ -1,0 +1,27 @@
+﻿[
+	{
+		"Name": "Clint",
+		"Frame": 38,
+		"FrameDirectionRight": true,
+	},
+	{
+		"Name": "Lewis",
+		"Frame": 51,
+		"FrameDirectionRight": true,
+	},
+	{
+		"Name": "Marnie",
+		"Frame": 39,
+		"FrameDirectionRight": true,
+	},
+	{
+		"Name": "Pam",
+		"Frame": 39,
+		"FrameDirectionRight": true,
+	},
+	{
+		"Name": "Willy",
+		"Frame": 35,
+		"FrameDirectionRight": true,
+	}
+]

@@ -1,0 +1,6 @@
+{
+	"Entries": {
+    "winter_6_1": "I've got an unusual request. Could you keep this a secret?^ I want you to deliver an amethyst to Emily. It's her favorite stone. Tell her it's from me.^  -Clint %item quest 110 %% [#]Clint's Unusual Request",
+    "emilythyst": "Oh. Almost forgot. Here you go.^^  -Clint %item object 66 1 %%"
+	},
+}

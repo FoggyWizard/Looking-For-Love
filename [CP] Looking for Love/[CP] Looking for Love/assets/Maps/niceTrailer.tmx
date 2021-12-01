@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.5" tiledversion="1.7.0" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="16" tileheight="16" infinite="0" nextlayerid="9" nextobjectid="8">
+ <properties>
+  <property name="DayTiles" value="Front 3 1 256 Front 3 2 288 Front 9 3 256 Front 9 4 288 Front 14 1 405 Front 15 1 406"/>
+  <property name="Doors" value="6 7 1 120"/>
+  <property name="NightTiles" value="Front 3 1 1253 Front 3 2 1285 Front 9 3 1253 Front 9 4 1285 Front 14 1 1220 Front 15 1 1221"/>
+  <property name="Warp" value="12 10 Town 72 69"/>
+ </properties>
+ <tileset firstgid="1" name="1" tilewidth="16" tileheight="16" tilecount="2176" columns="32">
+  <image source="townInterior.png" width="512" height="1088"/>
+ </tileset>
+ <tileset firstgid="2177" name="fancies" tilewidth="16" tileheight="16" tilecount="30" columns="6">
+  <image source="fancies.png" width="96" height="80"/>
+ </tileset>
+ <tileset firstgid="2207" name="p" tilewidth="16" tileheight="16" tilecount="32" columns="4">
+  <image source="paths.png" width="64" height="128"/>
+ </tileset>
+ <layer id="1" name="Back" width="20" height="12">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,298,299,299,299,299,299,0,0,0,0,0,0,605,605,605,605,0,0,1,
+1,298,299,299,299,299,299,0,0,0,0,0,0,604,540,540,604,605,573,1,
+1,298,107,29,29,30,605,605,605,605,605,605,605,113,113,113,113,636,636,1,
+1,62,29,29,29,29,30,0,0,604,636,604,604,832,799,799,800,636,604,1,
+1,27,61,32,61,61,28,605,605,113,113,113,0,831,829,829,831,169,604,1,
+1,27,61,64,28,28,28,636,636,799,799,799,799,831,831,831,831,799,800,1,
+1,27,61,61,28,61,28,799,799,799,799,799,799,831,831,831,831,831,831,1,
+1,27,61,61,28,28,831,799,799,829,831,831,831,831,831,831,831,799,800,1,
+1,27,61,61,28,1,1,1,1,1,1,1,831,1,1,1,1,1,1,1,
+1,27,61,61,28,1,1,1,1,1,1,1,829,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <objectgroup id="2" name="Back"/>
+ <layer id="3" name="Buildings" width="20" height="12">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,0,1427,1427,1427,1427,1427,0,0,0,0,0,0,0,0,0,0,0,0,1,
+1,74,75,75,75,75,75,0,0,0,0,0,0,81,81,81,81,155,0,1,
+1,106,678,107,107,610,611,0,0,0,0,0,156,1050,1051,1052,1053,155,0,1,
+1,138,710,711,0,642,643,0,0,81,81,81,188,1082,1083,1084,1085,187,81,1,
+1,715,0,0,0,0,0,155,156,601,599,600,220,2206,0,2201,0,219,113,1,
+1,552,0,0,714,133,0,187,188,633,631,632,634,0,2185,2186,2187,1087,1088,1,
+1,584,0,0,746,133,121,219,220,0,0,0,2188,0,2191,2192,2193,1119,1120,1,
+1,0,0,357,358,1,0,0,0,0,0,0,0,0,0,2203,0,352,496,1,
+1,432,0,0,0,1,1,1,1,1,1,1,0,1,1,1,1,1,1,1,
+1,434,0,321,322,1,0,0,0,0,0,1,0,1,0,0,0,0,0,0,
+1,1,1,1,1,1,0,0,0,0,0,1,1,1,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="4" name="Buildings">
+  <object id="1" name="TileData" x="32" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message 'Teacher's Guidebook: 2nd Grade'"/>
+   </properties>
+  </object>
+  <object id="2" name="TileData" x="80" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message 'Marcie And The Underground Castle'"/>
+   </properties>
+  </object>
+  <object id="3" name="TileData" x="96" y="64" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message 'The Solarion Chronicles'"/>
+   </properties>
+  </object>
+  <object id="4" name="TileData" x="96" y="112" width="16" height="16">
+   <properties>
+    <property name="Action" value="Door Penny"/>
+   </properties>
+  </object>
+  <object id="5" name="TileData" x="272" y="128" width="16" height="16">
+   <properties>
+    <property name="dfgsdfg" value="Message "/>
+   </properties>
+  </object>
+  <object id="6" name="TileData" x="288" y="128" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message It's full of empty beer bottles."/>
+   </properties>
+  </object>
+  <object id="7" name="TileData" x="16" y="144" width="16" height="16">
+   <properties>
+    <property name="Action" value="Message 'Fairys, Junimos, and other Fables'"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <layer id="5" name="Front" width="20" height="12">
+  <data encoding="csv">
+1,2,3,3,2122,3,11,12,0,0,0,0,10,3,3,2122,3,12,0,0,
+33,42,1345,257,1345,567,568,2154,1,1,1,1,65,1345,2177,2178,1345,194,4,0,
+65,0,0,289,0,578,579,69,10,3,3,2122,195,0,0,0,0,155,44,37,
+65,0,676,679,0,0,0,2154,65,2183,531,532,827,2194,0,0,0,827,757,69,
+2153,683,0,0,0,0,0,194,195,2189,563,564,570,2200,0,2195,0,0,0,69,
+65,0,0,0,682,101,57,0,0,0,0,0,602,0,2179,2180,2181,1055,1056,69,
+65,481,0,0,514,133,89,216,0,0,0,0,2182,0,0,0,0,0,0,69,
+65,0,0,325,326,133,0,0,0,0,0,0,0,0,0,2197,0,320,464,69,
+2153,0,0,359,360,20,166,166,2121,166,166,163,0,164,166,166,2121,166,167,168,
+65,0,0,391,392,69,0,0,0,0,0,65,0,69,0,0,0,0,0,0,
+161,162,166,166,167,168,0,0,0,0,0,97,166,131,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="6" name="Front"/>
+ <layer id="7" name="Paths" width="20" height="12">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,2214,0,0,0,0,
+0,0,2214,2211,2212,2212,2209,0,0,0,0,0,0,0,2208,2210,0,0,0,0,
+0,0,2208,2211,0,0,2213,0,0,2215,0,0,0,2214,2211,2215,2214,0,0,0,
+0,0,2213,2214,0,0,2213,0,0,2214,0,0,2214,0,2213,0,0,0,0,0,
+0,2214,2211,0,0,0,2207,2212,2212,2211,2212,2212,2211,2212,2210,0,0,0,0,0,
+0,0,2211,2212,2214,0,0,0,0,0,0,0,2213,0,0,0,0,0,0,0,
+0,0,2214,0,0,0,0,0,0,0,0,0,2213,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+ <objectgroup id="8" name="Paths"/>
+</map>

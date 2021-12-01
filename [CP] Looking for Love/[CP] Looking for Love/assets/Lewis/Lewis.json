@@ -1,0 +1,76 @@
+{
+//Foggy, you can use When DayEvent: wedding and Location: temp! That's how DSV handles applying our unique wedding outfits so that they don't have to be manually copied onto every spritesheet 
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Fields": {
+				"Lewis": {
+					5: "datable",
+				}
+			},
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Dialogue/MarriageDialogueLewis",
+			"FromFile": "assets/blank.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "{{FirstValidFile: assets/Lewis/{{language}}.json, assets/Lewis/default.json }}",
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Lewis": "LewisSpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/LewisSpouseRoom",
+            "FromFile": "assets/Maps/spouseroomLewis.tmx"
+        },
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Lewis",
+			"Entries": {
+				"marriage_Mon": "800 SeedShop 6 19 0 \"Strings\\schedules\\Lewis:marriage_Mon.000\"/1300 ScienceHouse 7 20 0 \"800 SeedShop 6 19 0 \"Strings\\schedules\\Lewis:marriage_Mon.001\"/1700 BusStop -1 23 3",
+				"marriage_Wed": "800 AnimalShop 11 16 0 \"Strings\\schedules\\Lewis:marriage_Wed.000\"/1230 FishShop 4 6 3 \"Strings\\schedules\\Lewis:marriage_Wed.001\"/1700 BusStop -1 23 3",
+				"marriage_Fri": "730 ArchaeologyHouse 2 10 0 \"Strings\\schedules\\Lewis:marriage_Fri.000\"/1300 Blacksmith 4 15 0 \"Strings\\schedules\\Lewis:marriage_Fri.001\"/1630 Saloon 9 22 3 lewis_drink \"Strings\\schedules\\Lewis:marriage_Fri.002\"/2200 BusStop -1 23 3"
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/ManorHouse",
+			"Entries": {
+				"282815608/f Lewis 2000/t 1400 1800/k 282815607": "continue/7 6/farmer -100 -100 0 Lewis 6 5 0 Marnie -100 -100 0/skippable/pause 500/move Lewis 2 0 0/pause 1500/move Lewis -1 0 0/pause 1000/warp Marnie 5 11 0/playSound doorClose/move Marnie 0 -4 0/emote Lewis 16/faceDirection Lewis 2/pause 100/speak Lewis \"{{i18n:Lewis8hearts.01}}\"/pause 800/speak Marnie \"{{i18n:Lewis8hearts.02}}\"/pause 300/emote Lewis 8/move Lewis 0 2 3/move Lewis -1 0 3/faceDirection Marnie 1/speak Lewis \"{{i18n:Lewis8hearts.03}}\"/pause 500/warp farmer 5 11 0/playSound doorClose/speak Marnie \"{{i18n:Lewis8hearts.04}}\"/emote farmer 16/emote Lewis 16/speak Lewis \"{{i18n:Lewis8hearts.05}}\"/move farmer -1 0 0/move farmer 0 -1 3/move farmer -2 0 1/speak Marnie \"{{i18n:Lewis8hearts.06}}\"/pause 500/faceDirection Marnie 2/emote Marnie 12/speak Marnie \"{{i18n:Lewis8hearts.07}}\"/pause 1000/emote Lewis 60/speak Lewis \"{{i18n:Lewis8hearts.08}}\"/pause 1000/faceDirection Marnie 1/pause 500/speak Marnie \"{{i18n:Lewis8hearts.09}}\"/emote farmer 16/pause 500/faceDirection Lewis 1/pause 1500/speak Lewis \"{{i18n:Lewis8hearts.10}}\"/pause 1500/speak Marnie \"{{i18n:Lewis8hearts.11}}\"/pause 1500/faceDirection Lewis 3/pause 500/speak Lewis \"{{i18n:Lewis8hearts.12}}\"/pause 2000/faceDirection Marnie 3/pause 1000/speak Marnie \"{{i18n:Lewis8hearts.13}}\"/pause 1000/speak Lewis \"{{i18n:Lewis8hearts.14}}\"/pause 500/emote Marnie 12/speak Marnie \"{{i18n:Lewis8hearts.15}}\"/pause 500/speak Lewis \"{{i18n:Lewis8hearts.16}}\"/pause 1500/move Marnie 0 4 3/warp Marnie -100 -100/playSound doorClose/pause 2000/move Lewis 2 0 1/move Lewis 0 -1 1/move Lewis 1 0 1/pause 500/emote Lewis 40/pause 2000/move farmer 3 0 0/move farmer 0 -4 1/move farmer 3 0 1/emote Lewis 16/faceDirection Lewis 3/speak Lewis \"{{i18n:Lewis8hearts.17}}\"/question fork1 \"#Are you okay?#Okay. I'll come back later.\"/fork noComfortLewis/pause 500/speak Lewis \"{{i18n:Lewis8hearts.18}}\"/pause 1500/speak Lewis \"{{i18n:Lewis8hearts.19}}\"/speak Lewis \"$q -1 null \"#{{i18n:Lewis8hearts.20}}#$r -1 0 event_lewisBreakup1#{{i18n:Lewis8hearts.21}}#$r -1 0 event_lewisBreakup2#{{i18n:Lewis8hearts.22}}#$r -1 0 event_lewisBreakup3#{{i18n:Lewis8hearts.23}}\"/pause 1500/emote Lewis 60/pause 800/speak Lewis \"{{i18n:Lewis8hearts.24}}\"/pause 2000/globalFade/viewport -1000 -1000/pause 1500/friendship Marnie -250/end dialogue Lewis \"{{i18n:Lewis8hearts.25}}\"/",
+				"noComfortLewis": "pause 500/move farmer -1 0 1/move Lewis -1 0 2/move Lewis 0 4 1/move Lewis 8 0 0/playSound doorClose/warp Lewis 12 4 3/friendship Lewis -250/end warpOut",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Town",
+			"Entries": {
+ 				"282815610/e 282815607/f Lewis 2000/t 800 1159/w sunny": "jaunty/61 88/farmer 51 82 1 Lewis 65 86 3/skippable/showFrame Lewis 16/pause 2000/move farmer 3 0 2/move farmer 0 6 1/emote Lewis 16/showFrame Lewis 12/pause 300/speak Lewis \"{{i18n:Lewis8hearts2.01}}\"/move Lewis 0 2 3/move farmer 10 0 1/speak Lewis \"{{i18n:Lewis8hearts2.02}}\"/speak Lewis \"$q -1 null \"#{{i18n:Lewis8hearts2.03}}#$r -1 0 event_lewisMorning1#{{i18n:Lewis8hearts2.04}}#$r -1 0 event_lewisMorning2#{{i18n:Lewis8hearts2.05}}#$r -1 0 event_lewisMorning3#{{i18n:Lewis8hearts2.06}}\"/pause 1000/speak Lewis \"{{i18n:Lewis8hearts2.07}}\"/faceDirection Lewis 2/pause 1500/speak Lewis \"{{i18n:Lewis8hearts2.08}}\"/pause 2000/faceDirection Lewis 3/speak Lewis \"{{i18n:Lewis8hearts2.09}}\"/pause 800/speak Lewis \"{{i18n:Lewis8hearts2.10}}\"/pause 1000/speak Lewis \"{{i18n:Lewis8hearts2.11}}\"/question fork1 \"#Oh... I'm sorry.#That's not true. We were never that close.\"/fork notThatClose/pause 1000/speak Lewis \"{{i18n:Lewis8hearts2.12}}\"/pause 500/speak Lewis \"{{i18n:Lewis8hearts2.13}}\"/pause 500/speak Lewis \"{{i18n:Lewis8hearts2.14}}\"/pause 100/speak Lewis \"$q -1 null \"#{{i18n:Lewis8hearts2.15}}#$r -1 0 event_loveMarnie1#{{i18n:Lewis8hearts2.16}}#$r -1 0 event_loveMarnie2#{{i18n:Lewis8hearts2.17}}#$r -1 0 event_loveMarnie3#{{i18n:Lewis8hearts2.18}}#$r -1 0 event_loveMarnie4#{{i18n:Lewis8hearts2.19}}\"/pause 1500/faceDirection Lewis 1/pause 2000/faceDirection Lewis 3/pause 500/speak Lewis \"{{i18n:Lewis8hearts2.20}}\"/pause 1000/speak Lewis \"{{i18n:Lewis8hearts2.21}}\"/pause 500/speak Lewis \"{{i18n:Lewis8hearts2.22}}\"/friendship Lewis 50/end warpOut",
+				"notThatClose": "emote Lewis 12/pause 1000/speak Lewis \"{{i18n:8hearts.notThatClose.01}}\"/pause 1500/speak Lewis \"{{i18n:8hearts.notThatClose.02}}\"/friendship Lewis -50/end warpOut",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"282815611/f Lewis 2500/t 600 1000/d Mon Tue Wed Thu Fri/w sunny": "continue/64 15/farmer 64 15 2 Lewis 65 16 0/pause 100/emote Lewis 16/speak Lewis \"{{i18n:Lewis10hearts.01}}\"/pause 200/emote farmer 32/pause 200/speak Lewis \"{{i18n:Lewis10hearts.02}}\"/pause 300/emote farmer 8/pause 200/speak Lewis \"{{i18n:Lewis10hearts.03}}\"/pause 500/speak Lewis \"{{i18n:Lewis10hearts.04}}\"/pause 300/emote Lewis 16/speak Lewis \"{{i18n:Lewis10hearts.05}}\"/pause 500/question fork1 \"{{i18n:Lewis10hearts.06}}#{{i18n:Lewis10hearts.07}}#{{i18n:Lewis10hearts.08}}#\"/fork noZuzu/pause 300/emote Lewis 16/speak Lewis \"{{i18n:Lewis10hearts.09}}\"/globalFade/viewport -1000 -1000/changeLocation Town/viewport -1000 -1000/warp farmer 66 86/warp Lewis 69 84/faceDirection farmer 0/faceDirection Lewis 3/viewport 66 86 true/pause 500/faceDirection Lewis 2/speak Lewis \"{{i18n:Lewis10hearts.10}}\"/pause 300/emote farmer 8/pause 300/speak Lewis \"{{i18n:Lewis10hearts.11}}\"/pause 300/faceDirection Lewis 3/speak Lewis \"{{i18n:Lewis10hearts.12}}\"/globalFade/viewport -1000 -1000/changeToTemporaryMap zuzuInn/viewport -1000 -1000/warp farmer 9 7/faceDirection farmer 1/warp Lewis 10 7/faceDirection Lewis 2/playSound busDriveOff/pause 2000/viewport 13 7 true/playMusic jaunty/pause 1000/emote Lewis 40/pause 300/emote farmer 8/pause 500/faceDirection Lewis 3/speak Lewis \"{{i18n:Lewis10hearts.13}}\"/speak Lewis \"$q -1 null \"#{{i18n:Lewis10hearts.14}}#$r -1 0 event_relocate1#{{i18n:Lewis10hearts.15}}#$r -1 0 event_relocate2#{{i18n:Lewis10hearts.16}}#$r -1 0 event_relocate3#{{i18n:Lewis10hearts.17}}\"/pause 500/globalFade/viewport -1000 -1000/changeToTemporaryMap meetingRoom/viewport -1000 -1000/warp farmer 7 8/faceDirection farmer 0/warp Lewis 5 8/faceDirection Lewis 0/addTemporaryActor Khari 16 32 5 5 2 true/addTemporaryActor Lin 16 32 7 5 2 true/addTemporaryActor James 16 32 3 7 2 true/addTemporaryActor Hank 16 32 9 7 2 true/viewport 6 5 true/pause 500/speak Khari \"{{i18n:Lewis10hearts.18}}\"/speak Lin \"{{i18n:Lewis10hearts.19}}\"/speak Hank \"{{i18n:Lewis10hearts.20}}\"/speak James \"{{i18n:Lewis10hearts.21}}\"/speak Lewis \"{{i18n:Lewis10hearts.22}}\"/pause 200/speak Khari \"{{i18n:Lewis10hearts.23}}\"/pause 500/globalFade/viewport -1000 -1000/changeToTemporaryMap meetingRoom2/viewport -1000 -1000/warp farmer 8 8/faceDirection farmer 1/warp Lewis 9 8/faceDirection Lewis 3/warp Hank -100 -100/warp James -101 -101/warp Khari -102 -102/warp Lin 10 5/showFrame Lin 1/viewport 6 5 true/pause 500/speak Lewis \"{{i18n:Lewis10hearts.24}}\"/pause 100/emote farmer 28/pause 300/speak Lewis \"{{i18n:Lewis10hearts.25}}\"/pause 500/move Lewis 1 0 2/speak Lin \"{{i18n:Lewis10hearts.26}}\"/pause 200/faceDirection Lewis 0/emote Lewis 8/move Lewis 0 -2 0/speak Lewis \"{{i18n:Lewis10hearts.27}}\"/move farmer 2 0 0/speak Lin \"{{i18n:Lewis10hearts.28}}\"/pause 200/speak Lewis \"{{i18n:Lewis10hearts.29}}\"/pause 200/speak Lin \"{{i18n:Lewis10hearts.30}}\"/pause 500/speak Lin \"{{i18n:Lewis10hearts.31}}\"/pause 200/emote Lewis 16/speak Lewis \"{{i18n:Lewis10hearts.32}}\"/emote Lin 56/speak Lin \"{{i18n:Lewis10hearts.33}}\"/pause 300/emote Lewis 28/pause 500/emote farmer 40/question fork1 \"{{i18n:Lewis10hearts.34}}#{{i18n:Lewis10hearts.35}}#{{i18n:Lewis10hearts.36}}#\"/fork keepKey/move farmer 0 -1 1/move farmer 1 0 0/move farmer 0 -2 3/emote Lin 16/speak Lin \"{{i18n:Lewis10hearts.37}}\"/question fork1 \"{{i18n:Lewis10hearts.38}}#{{i18n:Lewis10hearts.39}}#{{i18n:Lewis10hearts.40}}#\"/fork lewisRelationship/emote Lewis 16/speak Lewis \"{{i18n:Lewis10hearts.41}}\"/move Lewis 0 4 2/warp Lewis -222 -222/playSound doorClose/speak Lin \"{{i18n:Lewis10hearts.42}}\"/pause 100/move farmer 0 4 3/move farmer -1 0 2/move farmer 0 1 2/warp farmer -223 -223/playSound doorClose/emote Lin 12/pause 1500/globalFade/viewport -1000 -1000/changeToTemporaryMap zuzuInn/viewport -1000 -1000/warp Lin -121 -121/warp Lewis 11 5/faceDirection Lewis 3/warp farmer 12 5/faceDirection farmer 3/viewport 13 7 true/pause 2000/speak Lewis \"{{i18n:Lewis10hearts.43}}\"/faceDirection Lewis 1/speak Lewis \"{{i18n:Lewis10hearts.44}}\"/pause 500/speak Lewis \"{{i18n:Lewis10hearts.45}}\"/pause 300/emote farmer 8/pause 500/speak Lewis \"{{i18n:Lewis10hearts.46}}\"/pause 500/speak Lewis \"{{i18n:Lewis10hearts.47}}\"/pause 300/emote farmer 8/speak Lewis \"{{i18n:Lewis10hearts.48}}\"/emote farmer 8/pause 1000/speak Lewis \"{{i18n:Lewis10hearts.49}}\"/emote farmer 56/pause 300/emote Lewis 56/pause 500/speak Lewis \"{{i18n:Lewis10hearts.50}}\"/emote farmer 32/pause 2000/globalFade/viewport -1000 -1000/changeLocation Farm/viewport -1000 -1000/friendship Lewis 50/end position 64 16",
+				"noZuzu": "pause 500/speak Lewis \"{{i18n:10hearts.noZuzu.01}}\"/pause 500/speak Lewis \"{{i18n:10hearts.noZuzu.02}}\"/friendship Lewis -250/end position 64 16",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Temp",
+			"Entries": {
+ 				"keepKey": "pause 500/emote Lewis 60/speak Lewis \"{{i18n:event-keepKey.01}}\"/pause 300/speak Lin \"{{i18n:event-keepKey.02}}\"/pause 300/speak Lewis \"{{i18n:event-keepKey.03}}\"/pause 500/emote Lin 12/speak Lin \"{{i18n:event-keepKey.04}}\"/pause 500/emote Lewis 40/speak Lewis \"{{i18n:event-keepKey.05}}\"/speak Lin \"{{i18n:event-keepKey.06}}\"/emote Lewis 12/speak Lewis \"{{i18n:event-keepKey.07}}\"/move Lewis 0 1 2/move farmer -1 0 1/move Lewis 0 3 2/warp Lewis -200 -200/move farmer 1 0 2/pause 500/emote farmer 40/speak Lin \"{{i18n:event-keepKey.08}}\"/pause 100/faceDirection farmer 0/emote farmer 28/pause 1000/globalFade/viewport -1000 -1000/changeToTemporaryMap zuzuInn/viewport -1000 -1000/warp Lin -111 -111/warp Lewis 11 5/faceDirection Lewis 1/viewport 13 7 true/pause 300/emote Lewis 12/pause 1000/faceDirection farmer 0/warp farmer 11 13/playSound doorClose/pause 2000/emote Lewis 40/pause 1000/move farmer 0 -7 0/pause 2000/faceDirection Lewis 2/speak Lewis \"{{i18n:event-keepKey.09}}\"/pause 500/speak Lewis \"{{i18n:event-keepKey.10}}\"/emote Lewis 40/speak Lewis \"{{i18n:event-keepKey.11}}\"/pause 2000/speak Lewis \"$q -1 null \"#{{i18n:event-keepKey.12}}#$r -1 0 event_ruin1#{{i18n:event-keepKey.13}}#$r -1 0 event_ruin2#{{i18n:event-keepKey.14}}#$r -1 0 event_ruin3#{{i18n:event-keepKey.15}}\"/pause 2000/globalFade/viewport -1000 -1000/changeLocation Farm/viewport -1000 -1000/end position 64 16",
+				"lewisRelationship": "emote Lewis 16/speak Lewis \"{{i18n:event-lewisRelationship.01}}\"/move Lewis 0 4 2/warp Lewis -222 -222/playSound doorClose/speak Lin \"{{i18n:event-lewisRelationship.02}}\"/pause 100/move farmer 0 4 3/move farmer -1 0 2/move farmer 0 1 2/warp farmer -223 -223/playSound doorClose/emote Lin 12/pause 1500/globalFade/viewport -1000 -1000/changeToTemporaryMap zuzuInn/viewport -1000 -1000/warp Lin -121 -121/warp Lewis 11 5/faceDirection Lewis 3/warp farmer 12 5/faceDirection farmer 3/viewport 13 7 true/pause 1000/faceDirection Lewis 1/speak Lewis \"{{i18n:event-lewisRelationship.03}}\"/pause 2000/emote Lewis 40/pause 500/speak Lewis \"{{i18n:event-lewisRelationship.04}}\"/emote farmer 16/speak Lewis \"{{i18n:event-lewisRelationship.05}}\"/emote farmer 56/pause 300/emote Lewis 56/pause 500/speak Lewis \"{{i18n:event-lewisRelationship.06}}\"/emote farmer 32/pause 2000/globalFade/viewport -1000 -1000/changeLocation Farm/viewport -1000 -1000/friendship Lewis 60/end position 64 16",
+			},
+		},
+	]
+}

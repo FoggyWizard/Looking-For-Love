@@ -1,0 +1,829 @@
+{
+	"Format": "1.24.0",
+	
+	"ConfigSchema": {
+		"Date": {
+			"AllowValues": "Clint, Gus, Lewis, Linus, Marnie, Pam, Sandy, Willy, Wizard" ,
+			"Default": "Clint, Gus, Lewis, Linus, Marnie, Pam, Sandy, Willy",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own. If using your own, please note that Clint now needs an optional Clint_Blacksmith sprite set editing Clint_Blacksmith regardless of if he's set to dateable.",			
+		},
+	   "ClintOptions": {
+			"AllowValues": "VanillaSprite, VanillaPort, UpdateSprite, UpdatePort",
+			"Default": "VanillaSprite, VanillaPort",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own.",
+		},
+		"GusOptions": {
+			"AllowValues": "VanillaSprite, VanillaPort, UpdateSprite, UpdatePort",
+			"Default": "VanillaSprite, VanillaPort",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own.",
+		},	
+		"LewisOptions": {
+			"AllowValues": "VanillaSprite, VanillaPort, UpdateSprite, UpdatePort",
+			"Default": "VanillaSprite, VanillaPort",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own.",
+		},
+		"LinusOptions": {
+			"AllowValues": "VanillaSprite, VanillaPort, UpdateSprite, UpdatePort",
+			"Default": "VanillaSprite, VanillaPort",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own.",
+		},		
+		"MarnieOptions": {
+			"AllowValues": "VanillaSprite, VanillaPort, UpdateSprite, UpdatePort",
+			"Default": "VanillaSprite, VanillaPort",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own.",
+		},
+		"PamOptions": {
+			"AllowValues": "VanillaSprite, VanillaPort, UpdateSprite, UpdatePort",
+			"Default": "VanillaSprite, VanillaPort",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own.",
+		},	
+		"SandyOptions": {
+			"AllowValues": "VanillaSprite, VanillaPort, UpdateSprite, UpdatePort",
+			"Default": "VanillaSprite, VanillaPort",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own.",
+		},
+		"WillyOptions": {
+			"AllowValues": "VanillaSprite, VanillaPort, UpdateSprite, UpdatePort",
+			"Default": "VanillaSprite, VanillaPort",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own.",
+		},		
+		"WizardOptions": {
+			"AllowValues": "VanillaSprite, VanillaPort, UpdateSprite, UpdatePort",
+			"Default": "VanillaSprite, VanillaPort",
+			"AllowMultiple": true,
+			"AllowBlank": true,
+			"Description": "Options for sprites and portaits. Pick one of each or make blank to use your own. Disabled if you're using SVE",
+			"When": {"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"},
+		},	
+		"MarnieBarnLocation": {
+			"AllowValues": "true, false",
+			"Default": "false",
+			"AllowBlank": false,
+			"Description": "Loads Marnie's barn as a custom location."
+		},	
+	},
+	"DynamicTokens": [
+		{
+			"Name": "PamHouse",
+			"Value": "Trailer",
+		},
+		{
+			"Name": "PamHouse",
+			"Value": "Trailer_big",
+			"When": { "HasFlag: hostPlayer": "pamHouseUpgrade" },
+		},
+	],
+  	"CustomLocations": [
+    	{
+        	"Name": "Custom_LfL_MarnieBarn",
+        	"FromMapFile": "assets/Maps/MarnieBarn.tmx",
+      	},
+	],
+	"Changes": [
+		/************************************************
+		** Basic Asset Loading
+		************************************************/
+		{
+			"Action": "Load",
+			"Target": "Maps/bathroomTiles, Maps/clubZuzuTiles, Maps/fancies, Maps/gusPicnicTiles, Maps/sleepingBagTiles",
+			"FromFile": "assets/{{Target}}.png",
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Buttercup, Characters/Hank, Portraits/Hank, Characters/James, Portraits/James, Characters/Khari, Portraits/Khari, Characters/Lin, Portraits/Lin",
+			"FromFile": "assets/{{Target}}.png",
+		},
+		{
+			"Action": "Load",
+			"Target": "Maps/forestEvent, Maps/ClubZuzu, Maps/gusPicnic, Maps/zuzuInn, Maps/MarnieBarn, Maps/meetingRoom, Maps/meetingRoom2, Maps/niceTrailer, Maps/Tent2, Maps/WillyRoom",
+			"FromFile": "assets/{{Target}}.tmx",
+		},
+		/************************************************
+		** Sprites and Portraits
+		************************************************/
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Clint",
+			"FromFile": "assets/Characters/VanillaClint.png",
+			"When": {
+				"ClintOptions": "VanillaSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Clint",
+			"FromFile": "assets/Portraits/VanillaClint.png",
+			"When": {
+				"ClintOptions": "VanillaPort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Gus",
+			"FromFile": "assets/Characters/VanillaGus.png",
+			"When": {
+				"GusOptions": "VanillaSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Gus",
+			"FromFile": "assets/Portraits/VanillaGus.png",
+			"When": {
+				"GusOptions": "VanillaPort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Lewis",
+			"FromFile": "assets/Characters/VanillaLewis.png",
+			"When": {
+				"LewisOptions": "VanillaSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis",
+			"FromFile": "assets/Portraits/VanillaLewis.png",
+			"When": {
+				"LewisOptions": "VanillaPort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Linus",
+			"FromFile": "assets/Characters/VanillaLinus.png",
+			"When": {
+				"LinusOptions": "VanillaSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Linus",
+			"FromFile": "assets/Portraits/VanillaLinus.png",
+			"When": {
+				"LinusOptions": "VanillaPort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Marnie",
+			"FromFile": "assets/Characters/VanillaMarnie.png",
+			"When": {
+				"MarnieOptions": "VanillaSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie",
+			"FromFile": "assets/Portraits/VanillaMarnie.png",
+			"When": {
+				"MarnieOptions": "VanillaPort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Pam",
+			"FromFile": "assets/Characters/VanillaPam.png",
+			"When": {
+				"PamOptions": "VanillaSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Pam",
+			"FromFile": "assets/Characters/VanillaPam_Wedding.png",
+			"ToArea": { "X": 0, "Y": 288, "Width": 48, "Height": 32 },
+			"When": {
+				"PamOptions": "VanillaSprite",
+				"Spouse": "Pam",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Pam",
+			"FromFile": "assets/Portraits/VanillaPam.png",
+			"When": {
+				"PamOptions": "VanillaPort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Sandy",
+			"FromFile": "assets/Characters/VanillaSandy.png",
+			"When": {
+				"SandyOptions": "VanillaSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Sandy",
+			"FromFile": "assets/Portraits/VanillaSandy.png",
+			"When": {
+				"SandyOptions": "VanillaPort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Willy",
+			"FromFile": "assets/Characters/VanillaWilly.png",
+			"When": {
+				"WillyOptions": "VanillaSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Willy",
+			"FromFile": "assets/Portraits/VanillaWilly.png",
+			"When": {
+				"WillyOptions": "VanillaPort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Wizard",
+			"FromFile": "assets/Characters/VanillaWizard.png",
+			"When": {
+				"WizardOptions": "VanillaSprite",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard",
+			"FromFile": "assets/Portraits/VanillaWizard.png",
+			"When": {
+				"WizardOptions": "VanillaPort",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Clint",
+			"FromFile": "assets/Characters/UpdateClint.png",
+			"When": {
+				"ClintOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Clint_Beach",
+			"FromFile": "assets/Characters/Clint_Beach.png",
+			"When": {
+				"ClintOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Clint",
+			"FromFile": "assets/Portraits/UpdateClint.png",
+			"When": {
+				"ClintOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Clint_Beach",
+			"FromFile": "assets/Portraits/Clint_Beach.png",
+			"When": {
+				"ClintOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Gus",
+			"FromFile": "assets/Characters/UpdateGus.png",
+			"When": {
+				"GusOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Gus",
+			"FromFile": "assets/Portraits/UpdateGus.png",
+			"When": {
+				"GusOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Lewis",
+			"FromFile": "assets/Characters/UpdateLewis.png",
+			"When": {
+				"LewisOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Lewis_Beach",
+			"FromFile": "assets/Characters/Lewis_Beach.png",
+			"When": {
+				"LewisOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Lewis",
+			"FromFile": "assets/Portraits/UpdateLewis.png",
+			"When": {
+				"LewisOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Linus",
+			"FromFile": "assets/Characters/UpdateLinus.png",
+			"When": {
+				"LinusOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Linus",
+			"FromFile": "assets/Portraits/UpdateLinus.png",
+			"When": {
+				"LinusOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Marnie",
+			"FromFile": "assets/Characters/UpdateMarnie.png",
+			"When": {
+				"MarnieOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Marnie_Beach",
+			"FromFile": "assets/Characters/Marnie_Beach.png",
+			"When": {
+				"MarnieOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie",
+			"FromFile": "assets/Portraits/UpdateMarnie.png",
+			"When": {
+				"MarnieOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Marnie_Beach",
+			"FromFile": "assets/Portraits/Marnie_Beach.png",
+			"When": {
+				"MarnieOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Pam",
+			"FromFile": "assets/Characters/UpdatePam.png",
+			"When": {
+				"PamOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Pam",
+			"FromFile": "assets/Characters/UpdatePam_Wedding.png",
+			"ToArea": { "X": 0, "Y": 288, "Width": 48, "Height": 32 },
+			"When": {
+				"PamOptions": "UpdateSprite",
+				"Spouse": "Pam",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Pam_Beach",
+			"FromFile": "assets/Characters/Pam_Beach.png",
+			"When": {
+				"PamOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Pam",
+			"FromFile": "assets/Portraits/UpdatePam.png",
+			"When": {
+				"PamOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Pam_Beach",
+			"FromFile": "assets/Portraits/Pam_Beach.png",
+			"When": {
+				"PamOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Sandy",
+			"FromFile": "assets/Characters/UpdateSandy.png",
+			"When": {
+				"SandyOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Sandy",
+			"FromFile": "assets/Portraits/UpdateSandy.png",
+			"When": {
+				"SandyOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Willy",
+			"FromFile": "assets/Characters/UpdateWilly.png",
+			"When": {
+				"WillyOptions": "UpdateSprite"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Willy",
+			"FromFile": "assets/Portraits/UpdateWilly.png",
+			"When": {
+				"WillyOptions": "UpdatePort"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Wizard",
+			"FromFile": "assets/Characters/UpdateWizard.png",
+			"When": {
+				"WizardOptions": "UpdateSprite",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Portraits/Wizard",
+			"FromFile": "assets/Portraits/UpdateWizard.png",
+			"When": {
+				"WizardOptions": "UpdatePort",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+			},
+		},
+		/************************************************
+		** Marnie's Barn Location
+		************************************************/
+		{
+			"Action": "EditMap",
+			"Target": "Maps/AnimalShop",
+			"MapTiles": [
+				{
+					"Position": { "X": 30, "Y": 13},
+					"Layer": "Buildings",
+					"SetProperties": { "Action": "Warp 3 7 Custom_LfL_MarnieBarn" },
+				},
+			],
+			"When": { 
+				"Hearts:Marnie": "{{Range: 5, 14}}" ,
+				"MarnieBarnLocation": "true" 
+			}
+		},
+		{
+			"Action": "EditMap",
+			"Target": "Maps/Forest",
+			"MapTiles": [
+				{
+					"Position": { "X": 96, "Y": 15},
+					"Layer": "Buildings",
+					"Remove": true,
+				},
+				{
+					"Position": { "X": 96, "Y": 15},
+					"Layer": "Back",
+					"SetTilesheet": "outdoors",
+					"SetIndex": "170",
+					"SetProperties": { "NPCBarrier": "True" },
+				},
+				{
+					"Position": { "X": 97, "Y": 15},
+					"Layer": "Buildings",
+					"Remove": true,
+				},
+				{
+					"Position": { "X": 97, "Y": 15},
+					"Layer": "Back",
+					"SetTilesheet": "outdoors",
+					"SetIndex": "171",
+					"SetProperties": { "NPCBarrier": "True" },
+				},
+				{
+					"Position": { "X": 98, "Y": 15},
+					"Layer": "Buildings",
+					"Remove": true,
+				},
+				{
+					"Position": { "X": 98, "Y": 15},
+					"Layer": "Back",
+					"SetTilesheet": "outdoors",
+					"SetIndex": "170",
+					"SetProperties": { "NPCBarrier": "True" },
+				},
+				{
+					"Position": { "X": 99, "Y": 15},
+					"Layer": "Buildings",
+					"Remove": true,
+				},
+				{
+					"Position": { "X": 99, "Y": 15},
+					"Layer": "Back",
+					"SetTilesheet": "outdoors",
+					"SetIndex": "171",
+					"SetProperties": { "NPCBarrier": "True" },
+				},
+			],
+			"AddWarps": [
+				"96 15 Custom_LfL_MarnieBarn 9 13",
+				"97 15 Custom_LfL_MarnieBarn 10 13",
+				"98 15 Custom_LfL_MarnieBarn 13 13",
+				"99 15 Custom_LfL_MarnieBarn 14 13",
+			],
+			"When": { "MarnieBarnLocation": "true"}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Maps/CustomCompanions.json",
+			"When": {
+				"MarnieBarnLocation": "true" ,
+				"HasMod |contains=PeacefulEnd.CustomCompanions": "true"				
+			}
+		},
+		/************************************************
+		** Character Includes
+		************************************************/
+		{
+			"Action": "Include",
+			"FromFile": "assets/Clint/Clint.json",
+			"When": {
+				"Date": "Clint",
+				"HasMod |contains=ClintMarriageMod": "false"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Gus/Gus.json",
+			"When": {
+				"Date": "Gus",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Lewis/Lewis.json",
+			"When": {
+				"Date": "Lewis",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Linus/Linus.json",
+			"When": {
+				"Date": "Linus",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Marnie/Marnie.json",
+			"When": {
+				"Date": "Marnie",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Pam/Pam.json",
+			"When": {
+				"Date": "Pam",
+				"HasMod |contains=fellowclown.RomancePam": "false",
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Sandy/Sandy.json",
+			"When": {
+				"Date": "Sandy",
+				"HasMod |contains=Scorcher.Sandy": false,
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Willy/Willy.json",
+			"When": {
+				"Date": "Willy",
+				"HasMod |contains=fellowclown.RomanceWilly": "false"
+			}
+		},
+		{
+			"Action": "Include",
+			"FromFile": "assets/Wizard/Wizard.json",
+			"When": {
+				"Date": "Wizard",
+				"HasMod |contains=Parrot.RomRas": false,
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+				"HasMod |contains=misscoriel.razolyn": "false"
+			}
+		},
+		/************************************************
+		** Wedding Fixes
+		************************************************/
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Utility.cs.5371": "{{i18n:Husbandandwife}}",
+				"Utility.cs.5377": "{{i18n:Wifeandwife}}",
+			},
+			"When": {
+				"Spouse": "Marnie, Pam, Sandy",
+			}
+		},	
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromCSFiles",
+			"Entries": {
+				"Utility.cs.5367": "{{i18n:LewisMascPlayer}}",
+				"Utility.cs.5369": "{{i18n:LewisFemPlayer}}",
+				"Utility.cs.5371": "{{i18n:LewisHusband}}",
+				"Utility.cs.5377": "{{i18n:LewisWife}}",
+ 			},
+			"When": {
+				"Spouse": "Lewis",
+			}
+		},		
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Characters/UpdateMarnieDance.png",
+			"ToArea": { "X": 556, "Y": 1421, "Width": 64, "Height": 32 },
+			"When": {
+				"MarnieOptions": "UpdateSprite"
+			},
+		},	
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Clint",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 0, "Y": 64, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Clint",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Gus",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 0, "Y": 64, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Gus",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},	
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Lewis",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 0, "Y": 0, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Lewis",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Lewis",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 0, "Y": 64, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Lewis",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Lewis",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 0, "Y": 160, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Lewis",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},			
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Linus",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 0, "Y": 64, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Linus",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Marnie",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 0, "Y": 64, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Marnie",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "LooseSprites/Cursors",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 556, "Y": 1421, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Marnie",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Pam",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 0, "Y": 32, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Pam",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},		
+		{
+			"Action": "EditImage",
+			"Target": "Characters/Pam",
+			"FromFile": "assets/Characters/blank.png",
+			"ToArea": { "X": 0, "Y": 64, "Width": 64, "Height": 32 },
+			"When": {
+				"Spouse": "Pam",
+				"DayEvent": "wedding",
+			    "LocationName": "town, temp"
+			},
+		},
+		/************************************************
+		** General Data
+		************************************************/
+		{
+			"Action": "EditData",
+			"Target": "Strings/StringsFromMaps",
+			"Entries": {
+				"FishShop.1": "{{i18n:FishShop.WillyRoom}}",
+				"SandyHouseDateable0": "{{i18n:SandyHouseDateable0}}",
+				"SandyHouseDateable1": "{{i18n:SandyHouseDateable1}}",
+				"WizardBasementDateable0": "{{i18n:WizardBasementDateable0}}",
+				"Spouseroom.1": "{{i18n:Spouseroom.Clint0}}",
+				"Spouseroom.2": "{{i18n:Spouseroom.Gus0}}",
+				"Spouseroom.3": "{{i18n:Spouseroom.Lewis0}}",
+				"Spouseroom.4": "{{i18n:Spouseroom.Lewis1}}",
+				"Spouseroom.5": "{{i18n:Spouseroom.Linus0}}",
+				"Spouseroom.6": "{{i18n:Spouseroom.Marnie0}}",
+				"Spouseroom.7": "{{i18n:Spouseroom.Pam0}}",
+				"Spouseroom.8": "{{i18n:Spouseroom.Pam1}}",
+				"Spouseroom.9": "{{i18n:Spouseroom.Sandy0}}",
+				"Spouseroom.10": "{{i18n:Spouseroom.Willy0}}",
+				"Spouseroom.11": "{{i18n:Spouseroom.Willy1}}",
+				"Spouseroom.12": "{{i18n:Spouseroom.Wizard0}}",
+				"Spouseroom.13": "{{i18n:Spouseroom.Wizard1}}",
+				"Spouseroom.14": "{{i18n:Spouseroom.Wizard2}}",
+				"Spouseroom.15": "{{i18n:Spouseroom.Wizard3}}",
+			},
+		},		
+	]
+}

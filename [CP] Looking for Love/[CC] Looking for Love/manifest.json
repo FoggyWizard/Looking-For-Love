@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Looking For Love",
+  "Author": "Foggywizard",
+  "Version": "1.0.0",
+  "Description": "Fills Marnie's barn.",
+  "UniqueID": "foggy.lfl.marnieanimals",
+  "UpdateKeys": [],
+  "Dependencies": [],
+  "ContentPackFor": {
+    "UniqueID": "PeacefulEnd.CustomCompanions",
+    "MinimumVersion": "1.4.3"
+  }
+}

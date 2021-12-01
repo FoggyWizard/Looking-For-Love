@@ -1,0 +1,222 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Fields": {
+				"Sandy": {
+					5: "datable",
+				}
+			},
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Dialogue/MarriageDialogueSandy",
+			"FromFile": "assets/blank.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "{{FirstValidFile: assets/Sandy/{{language}}.json, assets/Sandy/default.json }}",
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Sandy": "SandySpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/SandySpouseRoom",
+            "FromFile": "assets/Maps/spouseroomSandy.tmx"
+        },
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Sandy",
+			"Entries": {
+				"marriage_Sun": "1000 HaleyHouse 8 16 2 \"Strings\\schedules\\Sandy:marriage_Sun.000\"/1500 Town 46 57 2 \"Strings\\schedules\\Sandy:marriage_Sun.001\"/1700 BusStop -1 23 3"
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"282815620/D Sandy/f Sandy 2500/x sandyDancing": "null",
+			},		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/SandyHouse",
+			"Entries": {
+				"282815619/D Sandy/f Sandy 2000/t 1500 2000": "gusviolin/23 6/farmer 8 4 1 Sandy 25 5 0/skippable/pause 1500/playSound dwop/pause 500/playSound dwop/pause 200/move Sandy -3 0 0/pause 200/playSound crafting/pause 500/playSound crafting/pause 200/move Sandy 1 0 0/pause 400/playSound clank/pause 300/playSound clank/pause 1000/move Sandy 1 0 0/playSound dwop/pause 1000/move farmer 11 0 1/faceDirection Sandy 3/emote Sandy 16/pause 300/speak Sandy \"{{i18n:Sandy8hearts.01}}\"/pause 200/speak Sandy \"{{i18n:Sandy8hearts.02}}\"/pause 300/question fork1 \"#Nope! I just came by to see you.#Actually, I was hoping to do some shopping.\"/fork sandyShop/pause 400/speak Sandy \"{{i18n:Sandy8hearts.03}}\"/pause 300/emote farmer 32/move farmer 1 0 2/move farmer 0 1 1/move farmer 2 0 2/move farmer 0 2 0/faceDirection Sandy 2/pause 500/emote Sandy 56/pause 500/faceDirection Sandy 0/playSound dwop/pause 500/move Sandy 1 0 0/pause 300/playSound dwop/pause 200/move Sandy -3 0 0/pause 200/playSound crafting/pause 500/playSound crafting/pause 200/move Sandy 1 0 0/pause 400/playSound clank/pause 300/playSound clank/pause 1000/move Sandy 1 0 0/playSound dwop/pause 1000/speak Sandy \"{{i18n:Sandy8hearts.04}}\"/pause 500/emote farmer 8/pause 300/speak Sandy \"{{i18n:Sandy8hearts.05}}\"/move Sandy -1 0 0/pause 100/playSound clank/pause 500/speak Sandy \"{{i18n:Sandy8hearts.06}}\"/pause 500/emote farmer 8/pause 500/speak Sandy \"{{i18n:Sandy8hearts.07}}\"/pause 1000/playSound dwop/pause 500/speak Sandy \"{{i18n:Sandy8hearts.08}}\"/pause 200/speak Sandy \"{{i18n:Sandy8hearts.09}}\"/move Sandy 1 0 0/pause 200/playSound crafting/pause 600/playSound dwop/pause 800/faceDirection Sandy 2/emote Sandy 56/speak Sandy \"{{i18n:Sandy8hearts.10}}\"/pause 400/emote farmer 32/pause 400/speak Sandy \"{{i18n:Sandy8hearts.11}}\"/pause 400/emote farmer 28/pause 2000/globalFade/viewport -1000 -1000/end warpOut",
+ 				"sandyShop": "pause 500/speak Sandy \"{{i18n:8hearts.sandyShop.01}}\"/pause 1500/friendship Sandy -25/end position 2 7",
+				"282815621/D Sandy/f Sandy 2500/t 2000 2350/n sandyDancing": "50s/4 6/farmer -10 -10 0 Sandy 2 5 2/pause 500/playSound doorClose/warp farmer 4 9/pause 200/emote Sandy 16/pause 400/speak Sandy \"{{i18n:Sandy10hearts.01}}\"/pause 300/move farmer 0 -2 3/move farmer -2 0 0/pause 500/speak Sandy \"{{i18n:Sandy10hearts.02}}\"/question fork1 \"#Sure am!#Not tonight, sorry.\"/fork notTonight/pause 500/emote Sandy 56/pause 500/speak Sandy \"{{i18n:Sandy10hearts.03}}\"/emote farmer 32/pause 1500/globalFade/viewport -1000 -1000/pause 1000/playSound busDriveOff/pause 1000/changeToTemporaryMap ClubZuzu/viewport -1000 -1000/warp farmer 10 10/faceDirection farmer 1/warp Sandy 11 10/faceDirection Sandy 3/playMusic poppy/viewport 12 9 true/ambientLight 0 0 0/pause 1500/emote Sandy 56/pause 500/speak Sandy \"{{i18n:Sandy10hearts.04}}\"/pause 500/emote farmer 28/pause 1000/speak Sandy \"{{i18n:Sandy10hearts.05}}\"/pause 1000/globalFade/viewport -1000 -1000/pause 1500/warp farmer 18 6/warp Sandy 17 6/faceDirection farmer 3/faceDirection Sandy 1/viewport 17 7 true/playMusic poppy/pause 1500/emote Sandy 56/pause 500/message \"{{i18n:Sandy10hearts.06}}\"/pause 800/emote Sandy 56/pause 500/speak Sandy \"{{i18n:Sandy10hearts.07}}\"/pause 1000/emote farmer 28/message \"{{i18n:Sandy10hearts.08}}\"/pause 1500/speak Sandy \"{{i18n:Sandy10hearts.09}}\"/pause 1000/question fork1 \"{{i18n:Sandy10hearts.10}}#{{i18n:Sandy10hearts.11}}#{{i18n:Sandy10hearts.12}}#\"/fork stayAtClub/pause 1000/globalFade/viewport -1000 -1000/message \"{{i18n:Sandy10hearts.13}}\"/pause 500/playSound busDriveOff/pause 500/changeLocation SandyHouse/warp Sandy 32 7/showFrame Sandy 16/positionOffset Sandy 8 0 0/warp farmer 34 7/faceDirection farmer 3/playMusic none/ambientLight 0 0 0/viewport 34 6 true/pause 500/message \"{{i18n:Sandy10hearts.14}}\"/pause 1000/emote Sandy 24/pause 500/message \"{{i18n:Sandy10hearts.15}}\"/pause 1500/speak Sandy \"{{i18n:Sandy10hearts.16}}\"/pause 500/emote farmer 8/pause 1500/speak Sandy \"{{i18n:Sandy10hearts.17}}\"/pause 1000/emote farmer 28/pause 1500/speak Sandy \"{{i18n:Sandy10hearts.18}}\"/pause 1000/question fork1 \"#I love you, too.#...You're drunk. Get some rest.\"/fork getRest/pause 1000/emote Sandy 24/pause 1000/message \"{{i18n:Sandy10hearts.19}}\"/pause 1000/globalFade/viewport -1000 -1000/pause 500/mail morningAfter/end warpOut",
+				"notTonight": "pause 500/speak Sandy \"{{i18n:10hearts.notTonight.01}}\"/pause 500/friendship Sandy -250/end dialogue Sandy \"{{i18n:10hearts.notTonight.02}}\"",
+				"getRest": "pause 500/emote Sandy 12/pause 300/speak Sandy \"{{i18n:10hearts.getRest.01}}\"/pause 1000/emote Sandy 24/pause 1000/message \"{{i18n:10hearts.getRest.02}}\"/pause 1000/globalFade/viewport -1000 -1000/pause 500/friendship Sandy -250/end warpOut",
+			},		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Temp",
+			"Entries": {
+				"stayAtClub": "pause 500/globalFade/viewport -1000 -1000/playMusic none/pause 1000/message \"{{i18n:event-stayAtClub.01}}\"/pause 500/warp farmer 10 10/faceDirection farmer 1/warp Sandy 11 10/faceDirection Sandy 3/viewport 12 9 true/playMusic shimmeringbastion/pause 1000/speak Sandy \"{{i18n:event-stayAtClub.02}}\"/pause 300/emote farmer 8/pause 500/emote Sandy 40/pause 1000/emote farmer 8/pause 300/speed Sandy 4/move Sandy 0 3 2/warp Sandy -10 -10/emote farmer 16/speed farmer 4/move farmer 1 0 2/speed farmer 4/move farmer 0 3 2/warp farmer -11 -11/pause 1000/speak Sandy \"{{i18n:event-stayAtClub.03}}\"/pause 1000/globalFade/viewport -1000 -1000/playMusic none/message \"{{i18n:event-stayAtClub.04}}\"/pause 1000/message \"{{i18n:event-stayAtClub.05}}\"/pause 1000/playSound busDriveOff/pause 1000/changeLocation SandyHouse/warp Sandy 32 7/showFrame Sandy 16/positionOffset Sandy 8 0 0/warp farmer 34 7/faceDirection farmer 3/playMusic none/ambientLight 0 0 0/viewport 34 6 true/pause 1500/message \"{{i18n:event-stayAtClub.06}}\"/pause 1500/emote Sandy 24/pause 1500/message \"{{i18n:event-stayAtClub.07}}\"/pause 1500/globalFade/viewport -1000 -1000/pause 500/pause 1000/end warpOut"
+			},		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Festivals/spring13",
+			"When": { 
+				"HasSeenEvent": "67",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",	
+			},
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Sandy 27 64 up",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+			"Action": "EditData",
+		  	"Target": "data/festivals/spring24",
+			"When": { 
+				"HasSeenEvent": "67",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",	
+			},
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Sandy 24 36 right",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/summer11",
+			"When": { 
+				"HasSeenEvent": "67",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",			
+			},
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Sandy 31 13 left",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+			"Action": "EditData",
+		  	"Target": "data/festivals/summer28",
+			"When": { 
+				"HasSeenEvent": "67",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",			
+			},
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Sandy 87 40 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/fall16",
+			"When": { 
+				"HasSeenEvent": "67",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",				
+			},
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Sandy 19 35 left",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/fall27",
+			"When": { 
+				"HasSeenEvent": "67",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",		
+			},
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Sandy 23 67 left",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/winter8",
+			"When": { 
+				"HasSeenEvent": "67",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",			
+			},
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Sandy 75 24 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/winter25",
+			"When": { 
+				"HasSeenEvent": "67",
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",			
+			},
+			"TextOperations": [
+				{    
+					"Operation": "Append",
+					"Target": ["Entries", "Set-Up_additionalCharacters"],
+					"Value": "Sandy 29 71 down",
+					"Delimiter": "/"
+				},
+			],
+		},
+		{
+		  	"Action": "EditMap",
+		  	"Target": "Maps/SandyHouse",
+			"FromFile": "assets/Maps/SandyHouse.tmx",
+			"ToArea": { "X": 18, "Y": 0, "Width": "22", "Height": "10" },
+			"PatchMode": "Replace",
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",			
+			},
+		},
+		{
+		  	"Action": "EditMap",
+		  	"Target": "Maps/SandyHouse",
+			"FromFile": "assets/Maps/SandyHouseSVE.tmx",
+			"ToArea": { "X": 19, "Y": 0, "Width": "24", "Height": "10" },
+			"PatchMode": "Replace",
+			"MapTiles": [
+				{
+					"Position": { "X": 18, "Y": 8  },
+					"Layer": "Front",
+					"SetTilesheet": "untitled tile sheet",
+					"SetIndex": "196"
+				},
+			],
+			"When": { 
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true",			
+			},
+		},
+	]
+}

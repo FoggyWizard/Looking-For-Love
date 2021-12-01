@@ -1,0 +1,6 @@
+{
+	"Entries": {
+						"allReady": "pause 300/speak Willy \"Don't you get smart with me, skipper.$h\"/pause 500/emote farmer 32/pause 400/emote Willy 32/pause 2000/speak Willy \"Hey... Thanks for stoppin' by, skipper. I appreciate the company.\"/pause 1000/emote farmer 56/pause 2000/globalFade/viewport -1000 -1000/changeLocation FishShop/end warpOut",
+						"rejectWilly": "pause 2000/speak Willy \"...Oh. Skipper... I-I mean, @...$s\"/pause 1500/speak Willy \"I'm sorry. I thought...$s\"/pause 1500/speak Willy \"...I-it doesn't matter.$s\"/pause 2000/speak Willy \"...We're not catchin' much, are we...?$s\"/emote farmer 28/pause 1500/speak Willy \"...I'll row us back to the dock.$s\"/pause 2000/globalFade/viewport -1000 -1000/pause 1000/changeLocation FishShop/end warpOut",
+				},
+}

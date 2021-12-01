@@ -1,0 +1,70 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Data/NPCDispositions",
+			"Fields": {
+				"Willy": {
+					5: "datable",
+				}
+			},
+		},
+		{
+			"Action": "Load",
+			"Target": "Characters/Dialogue/MarriageDialogueWilly",
+			"FromFile": "assets/blank.json"
+		},
+		{
+			"Action": "Include",
+			"FromFile": "{{FirstValidFile: assets/Willy/{{language}}.json, assets/Willy/default.json }}",
+		},
+        {
+            "Action": "EditData",
+            "Target": "Data/SpouseRooms",
+            "Entries": {
+                "Willy": "WillySpouseRoom/0"
+            }
+        },
+        {
+            "Action": "Load",
+            "Target": "Maps/WillySpouseRoom",
+            "FromFile": "assets/Maps/spouseroomWilly.tmx"
+        },
+		{
+			"Action": "EditData",
+			"Target": "Characters/schedules/Willy",
+			"Entries": {
+				"marriage_Tue": "800 FishShop 5 4 2 \"Strings\\schedules\\Willy:marriage_Tue.000\"/1700 BusStop -1 23 3",
+				"marriage_Thu": "800 FishShop 5 4 2 \"Strings\\schedules\\Willy:marriage_Thu.000\"/1330 BusStop -1 23 3",
+				"marriage_Fri": "630 Beach 38 36 2 dick_fish/850 FishShop 5 4 2 \"Strings\\schedules\\Willy:marriage_Fri.000\"/1700 Saloon 17 22 2 \"Strings\\schedules\\Willy:marriage_Fri.001\"/2200 BusStop -1 23 3",
+				"marriage_Sun": "700 Forest 91 40 2 dick_fish/1200 Beach 38 36 2 dick_fish/1630 BusStop -1 23 3"
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Farm",
+			"Entries": {
+				"282815622/D Willy/f Willy 2000/w rainy/x fishingInvite": "null",
+				"282815624/D Willy/f Willy 2500/w rainy/e 282815623/x fishingTrip": "null",	
+			},		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/FishShop",
+			"Entries": {
+				"282815623/f Willy 2000/t 600 1700/w rainy/n fishingInvite": "continue/5 5/farmer -10 -10 0 Willy -11 -11 2/skippable/pause 1500/playSound doorClose/warp farmer 5 9/pause 1000/emote farmer 8/pause 1000/move farmer 0 -3 0/pause 200/emote farmer 8/pause 800/message \"{{i18n:Willy8hearts.01}}\"/pause 1000/emote farmer 40/pause 500/message \"{{i18n:Willy8hearts.02}}\"/pause 500/emote farmer 16/pause 1000/speak Willy \"{{i18n:Willy8hearts.03}}\"/pause 600/emote farmer 8/pause 1000/message \"{{i18n:Willy8hearts.04}}\"/pause 500/question fork1 \"{{i18n:Willy8hearts.05}}#{{i18n:Willy8hearts.06}}#{{i18n:Willy8hearts.07}}#\"/fork leaveWilly/pause 500/globalFade/viewport -1000 -1000/changeToTemporaryMap WillyRoom/warp farmer 4 5/faceDirection farmer 2/warp Willy 1 5/positionOffset Willy 10 0/viewport 5 5 true/pause 200/emote Willy 16/pause 300/faceDirection farmer 3/pause 300/speak Willy \"{{i18n:Willy8hearts.08}}\"/pause 600/speak Willy \"{{i18n:Willy8hearts.09}}\"/pause 300/emote farmer 60/pause 800/speak Willy \"{{i18n:Willy8hearts.10}}\"/move farmer -1 0 3/faceDirection Willy 1/pause 300/emote Willy 60/pause 400/speak Willy \"{{i18n:Willy8hearts.11}}\"/pause 500/question fork1 \"{{i18n:Willy8hearts.12}}#{{i18n:Willy8hearts.13}}#{{i18n:Willy8hearts.14}}#\"/fork allReady/pause 500/emote Willy 32/pause 300/speak Willy \"{{i18n:Willy8hearts.15}}\"/pause 1000/emote farmer 32/pause 400/emote Willy 32/pause 2000/speak Willy \"{{i18n:Willy8hearts.16}}\"/pause 1000/emote farmer 56/pause 2000/globalFade/viewport -1000 -1000/changeLocation FishShop/friendship Willy 25/end dialogue Willy \"{{i18n:Willy8hearts.17}}\"",
+				"leaveWilly": "pause 1000/message \"{{i18n:8hearts.leaveWilly.01}}\"/pause 1000/friendship Willy -50/end warpOut",
+				"282815625/f Willy 2500/t 600 1700/w rainy/n fishingTrip": "continue/5 5/farmer -10 -10 0 Willy 6 4 2/pause 1500/playSound doorClose/warp farmer 5 9/pause 500/emote Willy 16/pause 100/speak Willy \"{{i18n:Willy10hearts.01}}\"/pause 500/question fork1 \"{{i18n:Willy10hearts.02}}#{{i18n:Willy10hearts.03}}#{{i18n:Willy10hearts.04}}#\"/fork noFishing/pause 600/speak Willy \"{{i18n:Willy10hearts.05}}\"/pause 400/emote farmer 32/pause 500/emote Willy 32/pause 1500/globalFade/viewport -1000 -1000/changeToTemporaryMap ElliottSea/viewport -1000 -1000/pause 1000/playMusic rain/warp farmer 26 20/positionOffset farmer 0 8/faceDirection farmer 2/warp Willy 26 20/positionOffset Willy 0 60/showFrame Willy 51/viewport 26 21 true/pause 2000/emote Willy 32/pause 1000/speak Willy \"{{i18n:Willy10hearts.06}}\"/pause 500/emote farmer 32/pause 1000/speak Willy \"{{i18n:Willy10hearts.07}}\"/pause 500/speak Willy \"{{i18n:Willy10hearts.08}}\"/pause 1000/question fork1 \"{{i18n:Willy10hearts.09}}#{{i18n:Willy10hearts.10}}#{{i18n:Willy10hearts.11}}#\"/fork rejectWilly/pause 1000/emote Willy 32/pause 500/speak Willy \"{{i18n:Willy10hearts.12}}\"/pause 1000/emote farmer 32/emote Willy 20/pause 2000/emote Willy 28/pause 500/speak Willy \"{{i18n:Willy10hearts.13}}\"/pause 500/emote farmer 28/pause 1500/speak Willy \"{{i18n:Willy10hearts.14}}\"/pause 500/emote farmer 20/pause 400/emote Willy 20/pause 2000/globalFade/viewport -1000 -1000/pause 1000/changeLocation FishShop/end position 6 6",	 
+		 		"noFishing": "pause 500/speak Willy \"{{i18n:10hearts.noFishing.01}}\"/pause 1000/speak Willy \"{{i18n:10hearts.noFishing.02}}\"/pause 1500/friendship Willy -250/end warpOut",
+			},		
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/Events/Temp",
+			"Entries": {
+				"allReady": "pause 300/speak Willy \"{{i18n:event-allReady.01}}\"/pause 500/emote farmer 32/pause 400/emote Willy 32/pause 2000/speak Willy \"{{i18n:event-allReady.02}}\"/pause 1000/emote farmer 56/pause 2000/globalFade/viewport -1000 -1000/changeLocation FishShop/end warpOut",
+				"rejectWilly": "pause 2000/speak Willy \"{{i18n:event-rejectWilly.01}}\"/pause 1500/speak Willy \"{{i18n:event-rejectWilly.02}}\"/pause 1500/speak Willy \"{{i18n:event-rejectWilly.03}}\"/pause 2000/speak Willy \"{{i18n:event-rejectWilly.04}}\"/emote farmer 28/pause 1500/speak Willy \"{{i18n:event-rejectWilly.05}}\"/pause 2000/globalFade/viewport -1000 -1000/pause 1000/changeLocation FishShop/end warpOut",
+			},		
+		},
+	]
+}

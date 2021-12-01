@@ -1,0 +1,16 @@
+{
+	"Entries": {
+						"danceRejection": "No, skipper. This body is for fishin', not for dancin'.",
+						"Mon8": "I just finished cookin' up yesterday's catch.#$e#Here, have some! Tell me what y'think. [198 209 214 219]" ,
+						"Mon10": "Let's go off on a fishing trip sometime, @.#$e#I'll show you some o' my secrets.$h" ,
+						"Tue10": "My little ol' cottage gets lonely sometimes.#$e#It's nice when you visit, skipper.$4" ,
+						"Wed8": "I heard there's a mutant fish you can catch in the sewers.#$e#Too bad they're all locked up.$h" ,
+						"Wed10": "Even if you hated fishing, I'd still want you as a friend, skipper.$h" ,
+						"Thu10": "I smell a storm brewing...#$e#If you ever get stuck in the rain, you can wait it out in my cottage.$h" ,
+						"Fri8": "Sometimes I stop by the saloon on Friday nights.#$e#I don't drink much, but it gets a little too quiet in the shop during the week." ,
+						"Fri10": "You look pretty strong... It must be all the farm work.$4#$e#I bet you can cast a fishing line for miles.$4" ,
+						"Sat10": "Do y'think an old sailor like me'll ever find love?$4" ,
+						"Sun7": "Rainy days are best for fishin' trips.#$b#Let's go sometime, eh, skipper?$h" ,
+						"divorced": "...$s" ,
+				},
+}
