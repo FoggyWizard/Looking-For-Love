@@ -95,7 +95,7 @@
 		"Clint10hearts2.10": "I-I hope that was okay.$4",
 		"Clint10hearts2.11": "You're the greatest, @. I'm so glad that I met you.$h",
 		"Clint10hearts2.12": "I'm so happy you feel the same. This is the happiest I've ever felt.$4",
-		"Clint10Fork1": "#I feel the same way.#I'm sorry... I don't feel the same."
+		"Clint10Fork1": "#I feel the same way.#I'm sorry... I don't feel the same.",
 		"10hearts.rejectClint.01": "...O-oh. Um.$8#$b#I-I'm sorry, @. I... I thought...$8#$b#Never mind...$8",
 		"10hearts.rejectClint.02": "Um... forget I said anything... please?$s#$b#You... you can keep the ring.$s",
 		"10hearts.rejectClint.03": "Um... sorry, @. I-I'd like to be alone a while...$s",
@@ -113,6 +113,7 @@
 		"Gus8hearts.08": "Please try to be more careful with broken glass, Gus. It can be a serious hazard.",
 		"Gus8hearts.09": "@... Thank you for bringing me here.#$b#It's nice to know I have somebody looking out for me.$4#$b#Don't worry... I'll be more careful next time. I promise.",
 		"Gus8hearts.10": "Now... how about let's head back to the saloon and you can help me finish cleaning up that mess?$h",
+		"Gus8Fork1": "#It's deep. Let me take you to Dr. Harvey.#It looks bad. You should go see a doctor.",
 	    "8hearts.doctorAlone.01": "I'm... sure I'll be fine. I'm going to finish cleaning up this mess, then maybe I'll go pay him a visit.$5#$b#Thanks for stopping by, @. I'll see you later.$s",
 	//Saloon 10 Heart Event
 		"Gus10hearts.01": "Oh, @! I was just thinking about you.$h",
@@ -138,6 +139,8 @@
 		"Gus10hearts2.09": "@... My feelings for you have gotten more than friendly.$4",
 		"Gus10hearts2.10": "I had a feeling, but... I had to be sure.$4",
 		"Gus10hearts2.11": "You've made me a very happy man, @.$4",
+		"Gus10Fork1": "#Sounds great! I'm in.#No thanks.",
+		"Gus10Fork2": "#I feel the same way.#I'm sorry... I don't feel that way about you.",
 	    "10hearts.noPicnic.01": "...Oh. I see.$s#$b#Some other time then, perhaps...$s",
     	"10hearts.noPicnic.02": "Have a nice night, @.$s",
 	    "event-rejectGus.01": "Wh...what? You don't...?$s",
