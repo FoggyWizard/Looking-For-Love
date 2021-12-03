@@ -1,5 +1,0 @@
-{
-	"Entries": {
-						"282815602/D Clint/f Clint 2500/w sunny/t 1600 2300": "nightTime/54 8/farmer 41 10 0 Clint 47 7 1/skippable/pause 1000/move Clint 7 0 0/move Clint 0 -2 0/move farmer 0 -3 1/faceDirection Clint 2/pause 1500/showFrame Clint 35/emote Clint 16/jump Clint/showFrame Clint 0/move farmer 9 0 1/speak Clint \"Oh! @... Wh-what are you doing here?\"/pause 1500/speak Clint \"What? M-me?$s\"/speak Clint \"$q -1 null#I-I ran out of iron in the middle of a project, so I... I came here to find some more.#$r -1 0 event_iron1#I didn't know you're a miner.#$r -1 0 event_iron2#Really? How's it going?#$r -1 0 event_iron3#I don't believe you.\"/pause 1000/speak Clint \"A-anyways... um...\"/move Clint 0 2 3/speak Clint \"I-I'll see you later, @.\"/move farmer 0 1 0/move Clint -6 0 1/move farmer 0 -1 3/pause 500/speak Clint \"Uh... @?\"/pause 1000/faceDirection Clint 2/pause 500/faceDirection Clint 1/pause 300/speak Clint \"Come visit my shop tomorrow. I, uh...$8#$b#I-I-I have something for you.$8\"/move Clint -7 0 3/showFrame Clint 43/end",
-				},
-}

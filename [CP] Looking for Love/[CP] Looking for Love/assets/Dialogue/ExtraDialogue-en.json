@@ -1,8 +1,0 @@
-{
-	"Entries": {
-			    "Mines_PlayerKilled_Clint_NotSpouse": "...I found you unconscious in the mines. I think I blew my back out, dragging you all the way up here.#$b#Be a little more careful next time, okay?$s",
-				"Mines_PlayerKilled_Clint_Spouse": "...I found you unconscious in the mines, my gem...$s#$b#I was so worried! Please be more careful...$s",
-				"Mines_PlayerKilled_Linus_NotSpouse": "...I found you unconscious in the mines. You're lucky I happened to pass by!#$b#Be a little more careful next time, okay?$s",
-				"Mines_PlayerKilled_Linus_Spouse": "...I found you unconscious in the mines. You were gone so long I started to worry.$s#$b#Please be more careful.$s",
-				},
-}

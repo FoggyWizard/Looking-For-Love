@@ -1,5 +1,0 @@
-{
-	"Entries": {
-						"rejectGus": "pause 500/speak Gus \"Wh...what? You don't...?$s\"/pause 1500/speak Gus \"...Oh.$s\"/faceDirection Gus 2/pause 2000/emote Gus 40/pause 500/speak Gus \"Perhaps it's best if we cut our evening short, @. I'm... I'm not feeling well. I'm sorry.$s\"/pause 2000/globalFade/viewport -1000 -1000/changeLocation Farm/friendship Gus -500/end position 64 16",
-				},
-}
