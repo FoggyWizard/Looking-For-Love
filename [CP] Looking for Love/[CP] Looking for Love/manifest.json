@@ -2,7 +2,7 @@
   "Name": "Looking for Love",
    "Author": "sivolobwho and foggywizard",
    "Description": "Lets you romance and marry Clint, Gus, Lewis, Linus, Marnie, Pam, Sandy, Willy, & Wizard.",
-   "Version": "2.2.0",
+   "Version": "2.2.1",
    "UniqueID": "foggy.LfL",
    "ContentPackFor": {
        "UniqueID": "Pathoschild.ContentPatcher"

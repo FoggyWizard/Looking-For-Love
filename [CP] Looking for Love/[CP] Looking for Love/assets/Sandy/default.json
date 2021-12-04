@@ -178,14 +178,6 @@
 		},
 		{
 			"Action": "EditData",
-			"Target": "Data/mail",
-			"Entries": {
-				"sandyDancing": "@!^^A little birdie told me you've never been dancing in Zuzu City before! I think we should change that tonight!^Meet me at my shop around 9 and we'll go out!^^  Love,^  Sandy^^P.S. Don't forget to wear something cute!! :)",
-				"morningAfter": "@,^^Thank you for taking care of me last night. My memory's a little foggy, but I do remember how you tucked me in when we were back at my place.^I meant what I said when I told you I love you. It wasn't just drunk rambling! Really.^I'll see you next time you come by (make it soon!!!).^^Love,^ Sandy",
-			},
-		},
-		{
-			"Action": "EditData",
 			"Target": "data/festivals/spring13",
 			"Entries": {
 				"Sandy": "An egg hunt, huh? Hide and seek isn't really my thing, but watching the kids play sure is nice.",
