@@ -30,6 +30,13 @@
             "Target": "Maps/MarnieSpouseRoom",
             "FromFile": "assets/Maps/spouseroomMarnie.tmx"
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Marnie": "LfLSpousepatios/4/31 31 31 30 29 28 29 30 29 28 29 30"
+            }
+        },
 		{
 			"Action": "EditData",
 			"Target": "Characters/schedules/Marnie",

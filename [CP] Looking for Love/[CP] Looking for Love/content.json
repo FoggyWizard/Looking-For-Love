@@ -149,7 +149,7 @@
 		},
 		{
 			"Action": "Load",
-			"Target": "Maps/forestEvent, Maps/ClubZuzu, Maps/gusPicnic, Maps/zuzuInn, Maps/MarnieBarn, Maps/meetingRoom, Maps/meetingRoom2, Maps/niceTrailer, Maps/Tent2, Maps/WillyRoom",
+			"Target": "Maps/forestEvent, Maps/ClubZuzu, Maps/gusPicnic, Maps/zuzuInn, Maps/MarnieBarn, Maps/meetingRoom, Maps/meetingRoom2, Maps/niceTrailer, Maps/niceTrailer_big, Maps/Tent2, Maps/WillyRoom, Maps/LfLSpousepatios",
 			"FromFile": "assets/{{Target}}.tmx",
 		},
 		/************************************************

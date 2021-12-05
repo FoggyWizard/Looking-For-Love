@@ -30,6 +30,13 @@
             "Target": "Maps/WillySpouseRoom",
             "FromFile": "assets/Maps/spouseroomWilly.tmx"
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Gus": "LfLSpousepatios/5"
+            }
+        },
 		{
 			"Action": "EditData",
 			"Target": "Characters/schedules/Willy",

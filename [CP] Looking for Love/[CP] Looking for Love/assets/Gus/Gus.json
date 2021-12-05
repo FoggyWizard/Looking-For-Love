@@ -28,6 +28,13 @@
             "Target": "Maps/GusSpouseRoom",
             "FromFile": "assets/Maps/spouseroomGus.tmx"
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Gus": "LfLSpousepatios/1"
+            }
+        },
 		{
 			"Action": "EditData",
 			"Target": "Characters/schedules/Gus",

@@ -30,6 +30,13 @@
             "Target": "Maps/LinusSpouseRoom",
             "FromFile": "assets/Maps/spouseroomLinus.tmx"
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Linus": "LfLSpousepatios/3"
+            }
+        },
 		{
 			"Action": "EditData",
 			"Target": "Characters/schedules/Linus",

@@ -40,6 +40,13 @@
             "Target": "Maps/WizardSpouseRoom",
             "FromFile": "assets/Maps/spouseroomWizard.tmx"
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Wizard": "LfLSpousepatios/6"
+            }
+        },
 		{
 		  	"Action": "EditMap",
 		  	"Target": "Maps/WizardBasement",

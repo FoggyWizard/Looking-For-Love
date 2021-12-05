@@ -30,6 +30,13 @@
             "Target": "Maps/SandySpouseRoom",
             "FromFile": "assets/Maps/spouseroomSandy.tmx"
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Sandy": "LfLSpousepatios/2"
+            }
+        },
 		{
 			"Action": "EditData",
 			"Target": "Characters/schedules/Sandy",

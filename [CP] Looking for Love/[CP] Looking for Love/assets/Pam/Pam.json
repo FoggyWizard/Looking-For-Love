@@ -30,6 +30,13 @@
             "Target": "Maps/PamSpouseRoom",
             "FromFile": "assets/Maps/spouseroomPam.tmx"
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Pam": "LfLSpousepatios/2"
+            }
+        },
 		{
 			"Action": "EditData",
 			"Target": "Characters/schedules/Pam",

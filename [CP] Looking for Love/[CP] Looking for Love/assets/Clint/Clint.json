@@ -38,6 +38,13 @@
             "Target": "Maps/ClintSpouseRoom",
             "FromFile": "assets/Maps/spouseroomClint.tmx"
         },
+        {
+            "Action": "EditData",
+            "Target": "Data/SpousePatios",
+            "Entries": {
+                "Clint": "LfLSpousepatios/0"
+            }
+        },
 		{
 			"Action": "EditData",
 			"Target": "Characters/schedules/Clint",
