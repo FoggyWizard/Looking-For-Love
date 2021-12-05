@@ -64,9 +64,6 @@
 		},
 		{
 			"Action": "EditData",
-			"Target": "Data/Events/SandyHouse",
-		{
-			"Action": "EditData",
 			"Target": "Data/Events/Temp",
 			"Entries": {
 				"stayAtClub": "pause 500/globalFade/viewport -1000 -1000/playMusic none/pause 1000/message \"{{i18n:event-stayAtClub.01}}\"/pause 500/warp farmer 10 10/faceDirection farmer 1/warp Sandy 11 10/faceDirection Sandy 3/viewport 12 9 true/playMusic shimmeringbastion/pause 1000/speak Sandy \"{{i18n:event-stayAtClub.02}}\"/pause 300/emote farmer 8/pause 500/emote Sandy 40/pause 1000/emote farmer 8/pause 300/speed Sandy 4/move Sandy 0 3 2/warp Sandy -10 -10/emote farmer 16/speed farmer 4/move farmer 1 0 2/speed farmer 4/move farmer 0 3 2/warp farmer -11 -11/pause 1000/speak Sandy \"{{i18n:event-stayAtClub.03}}\"/pause 1000/globalFade/viewport -1000 -1000/playMusic none/message \"{{i18n:event-stayAtClub.04}}\"/pause 1000/message \"{{i18n:event-stayAtClub.05}}\"/pause 1000/playSound busDriveOff/pause 1000/changeLocation SandyHouse/warp Sandy 32 7/showFrame Sandy 16/positionOffset Sandy 8 0 0/warp farmer 34 7/faceDirection farmer 3/playMusic none/ambientLight 0 0 0/viewport 34 6 true/pause 1500/message \"{{i18n:event-stayAtClub.06}}\"/pause 1500/emote Sandy 24/pause 1500/message \"{{i18n:event-stayAtClub.07}}\"/pause 1500/globalFade/viewport -1000 -1000/pause 500/pause 1000/end warpOut"
