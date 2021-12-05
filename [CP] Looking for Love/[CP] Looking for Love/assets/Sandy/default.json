@@ -69,7 +69,7 @@
 		},
 		{
 			"Action": "EditData",
-			"Target": "Characters/Dialogue/MarriageDialogueLinus",
+			"Target": "Characters/Dialogue/MarriageDialogueSandy",
 			"Entries": {
 				"Rainy_Day_Sandy": "Stay dry, sweetie! Don't stay outside too long.",
 				"Rainy_Night_Sandy": "Dinner's ready, honey. I hope you like it. [218 732 207 224]$h",
