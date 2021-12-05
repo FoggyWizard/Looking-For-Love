@@ -90,6 +90,42 @@
 			"Value": "Trailer_big",
 			"When": { "HasFlag: hostPlayer": "pamHouseUpgrade" },
 		},
+		{
+			"Name": "SandyEvent8_1",
+			"Value": "23 6/farmer 8 4 1 Sandy 25 5 0",
+		},
+		{
+			"Name": "SandyEvent8_1",
+			"Value": "26 6/farmer 21 8 0 Sandy 28 5 0",
+			"When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"	},	
+		},
+		{
+			"Name": "SandyEvent8_2",
+			"Value": "move farmer 11 0 1",
+		},
+		{
+			"Name": "SandyEvent8_2",
+			"Value": "move farmer 0 -3 1",
+			"When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"	},	
+		},
+		{
+			"Name": "SandyEvent8_3",
+			"Value": "move farmer 1 0 2/move farmer 0 1 1/move farmer 2 0 2",
+		},
+		{
+			"Name": "SandyEvent8_3",
+			"Value": "move farmer 4 0 2",
+			"When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"	},	
+		},
+		{
+			"Name": "SandyEvent10_1",
+			"Value": "warp Sandy 32 7/showFrame Sandy 16/positionOffset Sandy 8 0 0/warp farmer 34 7",
+		},
+		{
+			"Name": "SandyEvent10_1",
+			"Value": "warp Sandy 35 7/showFrame Sandy 16/positionOffset Sandy 8 0 0/warp farmer 37 7",
+			"When": { "HasMod |contains=FlashShifter.StardewValleyExpandedCP": "true"	},	
+		},
 	],
   	"CustomLocations": [
     	{
