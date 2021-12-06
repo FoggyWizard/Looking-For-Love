@@ -1,0 +1,260 @@
+{
+	"Changes": [
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries": {
+				"danceRejection": "Lo siento cariño. Quizás el año que viene.$h",
+				"Mon4": "¡Oye, @!$h#$e#¿Te gusta estar aquí en el desierto?",
+				"Mon8": "Hola, cariño. ¡Seguro que vienes mucho!$h",
+				"Tue2": "Ah, hoy es un día tan tranquilo...$h",
+				"Tue6": "¿Cómo va tu semana, cariño?#$e#Cuéntamelo.",
+				"Wed4": "¡Tráeme algo de tu granja alguna vez, @! Sé lo exitoso que eres.$h^¡Tráeme algo de tu granja alguna vez, @! Sé lo exitosa que eres.$h",
+				"Wed8": "¿No es caro venir al desierto tan a menudo?#$e#Te debe gustar mucho verme, ¿eh? Hmmm...$h",
+				"Thu8": "Apuesto a que desearías saber mi nombre real, ¿eh?$h",
+				"Fri6": "¡Feliz viernes, @!$h#$e#Oh... Los granjeros no tienen fin de semana, ¿verdad?$3",
+				"Fri10": "Ah, @. Te ves guapo hoy.^Ah, @. Te ves preciosa hoy.",
+				"Sat2": "¡@! ¡Encantada de verte! ¿Cómo va la vida en el valle?",
+				"Sat6": "¡Oh, hola, cariño!$h#$e#Los fines de semana siempre son tan lentos... ¡Es bueno ver una cara familiar!",
+				"Sat8": "Es sábado... ¡Será mejor que te vayas! ¡Estoy segura de que un hombre guapo como tú tiene una cita esta noche!^Es sábado... ¡Será mejor que te vayas! ¡Una dama como tú tiene una cita esta noche!",
+				"Sat10": "Dime, cariño, ¿alguna vez pensaste en mudarte al desierto? Es un lugar agradable.$h",
+				"Sun4": "¿Has visto a Emily últimamente?#$e#Nos conocemos desde hace bastante tiempo.$h#$e#¡Ella realmente diseñó mi atuendo!",
+				"Sun10": "Has estado trabajando duro, ¿no?#$e#Puedo verlo.$7",
+				"divorced": "...¿Qué puedo hacer por ti?$s",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries": {
+				"give_flowersA": "¡Un ramo!$6#$b#¡Me encantan las flores! Muchas gracias.$4#$b#¿Oh? Si. Sé lo que significa aceptarlas.",
+				"give_flowersB": "¡...! ¡Acepto!$h#$b#Todavía tengo trabajo aquí.$4#$b#Pero estoy segura de que lo haremos funcionar.$h",
+				"give_pendant": "¡Sí! ¡Por supuesto que sí!$h#$b#¡Te amo muchísimo!$4#$b#Simplemente vamos a hablar con el alcalde de tu pueblo, ¿vale?$h",
+				"stardrop_gift": "'Oh, cariño, ¿puedes venir un segundo?$4#$b#Quería darte esta fruta estelar para mostrarte mi amor.$h#$b#Gracias. Por todo.$h",
+				"rejectNPCA": "Aprecio el gesto... pero necesito darte un pase.$1",
+				"rejectNPCB": "Si estuviera contigo, sería complicado ir a trabajar todos los días.$1",
+				"reject_two_heartA": "¿Y renunciar a la vida de soltera? ¡De ninguna manera!$h",
+				"reject_two_heartB": "Lo siento cariño. Estoy feliz como estoy.$h",
+				"reject_four_heartA": "El trabajo me mantiene aquí, cariño. Aprecio la idea.$h",
+				"reject_four_heartB": "Ese es un no de mi parte, cariño. Oye, di 'hola' a Emily de mi parte en el valle, ¿vale?$h",
+				"engageA": "Oh... ¿no le diste esto a la persona con la que estás comprometido? Ya debería llevarlo puesto.^Oh... ¿no le diste esto a la persona con la que estás comprometida? Ya debería llevarlo puesto.",
+				"engageB": "Lo siento pero no soy tan escandalosa.$2",
+				"marriedA": "¿Cómo se casó una persona como tú?",
+				"marriedB": "Proponiendo matrimonio a alguien y todavía estás casado.^Proponiendo matrimonio a alguien y todavía estás casada.#$b#No creo que mantengas un matrimonio por mucho tiempo con esa actitud.",
+				"refusal_knownA": "¡Un colgante de sirena! ¡Es hermoso!$h#$b#Quiero uno, pero no quiero lo que conlleva.$7",
+				"refusal_knownB": "Una vida en una granja, ¿eh? Atractivo, pero no.",
+				"refusal_botherA": "Sabes, es un poco molesto cuando sigues poniéndome eso en la cara.$5",
+				"refusal_botherB": "¡No significa que no! ¿Cómo no lo entendiedes?$5",
+				"refusal_no_heartsA": "Qué bien... Pero no me interesa. Gracias por la oferta.$1",
+				"refusal_no_heartsB": "Eres lindo por preguntar. Pero no estoy buscando marido.^Eres linda por preguntar. Pero no estoy buscando esposa."
+				},
+			"When": { "HasMod": "misscoriel.courtship"},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/Sandy",
+			"Entries": {
+				"give_flowersA": "¡Flores! ¡Me encantan estas! ¡Gracias!$4",
+				"give_flowersB": "Sabes, nunca pensé que llegaría a ver tantas flores como ahora.$h",
+				"give_pendant": "Por mucho que lo aprecio, regalar más de uno daría... un mensajes extraño.$7",
+				"engageA": "Yo... ¿es malo decir que quiero más?$7",
+				"engageB": "Solo necesito uno, cariño.$4",
+				"marriedA": "¿Me estás construyendo una colección?$7#$b#Bueno, no puedo decir que me importe. Son hermosos.$h",
+				"marriedB": "Dios mío, cariño. Seguro que solo estás teniendo suerte encontrándolos.$4"
+			},
+			"When": { 
+				"HasMod": "misscoriel.courtship",
+				"Spouse": "Sandy"
+			}
+		},
+		{
+			"Action": "EditData",
+			"Target": "Characters/Dialogue/MarriageDialogueSandy",
+			"Entries": {
+				"Rainy_Day_Sandy": "¡Mantente seco, cariño! No te quedes afuera por mucho tiempo.^¡Mantente seca, cariño! No te quedes afuera por mucho tiempo.",
+				"Rainy_Night_Sandy": "La cena está lista, cariño. Espero que te guste.[218 732 207 224]$h",
+				"Indoor_Day_Sandy": "¿Tienes planes de visitar el desierto Cálico hoy, cariño?#$e#¡Si vas, asegúrate de traer algunos cocos y higos chumbos!$h",
+				"Indoor_Night_Sandy": "El valle y el desierto... Ninguno de los dos está completamente en silencio por la noche.#$e#Sin embargo, los tipos de sonidos que escuchas son completamente diferentes.#$e#Todavía estoy tratando de averiguar algunos de los sonidos del valle. Son misteriosos.$h",
+				"Outdoor_Sandy": "El sol aquí es mucho más suave para mi piel. ¡Es un alivio no tener que ponerme bloqueador todos los días!$h",
+				"spring_Sandy": "Vaya... ¡todo es tan verde aquí en el valle!$h",
+				"summer_Sandy": "¡Vamos a la playa, cariño! ¡El clima es perfecto!",
+				"fall_Sandy": "El desierto no tiene colores otoñales como el valle.#$e#¡Me encanta!$h",
+				"winter_Sandy": "¡Hace mucho frío!#$e#Ah... ¿dónde puse mi abrigo...?$s",
+				"Rainy_Day_0": "¡Está lloviendo!$h#$e#Nunca vi una gota de lluvia en el desierto.",
+				"Rainy_Day_1": "¡Mantente seco, cariño! No te quedes afuera mucho tiempo",
+				"Rainy_Day_2": "Buenos días, cariño.#$e#¡Está lloviendo! Bebe esto y mantente caliente.[395]$h",
+				"Rainy_Day_3": "Todavía me estoy acostumbrando a la lluvia...$s#$e#¡Paso una hora arreglando mi cabello y la lluvia lo destruye por completo!$a#$e#No sé cómo te las arreglas para verte tan bien, incluso empapado...^No sé cómo te las arreglas para verte tan bien, incluso empapada...",
+				"Rainy_Day_4": "La lluvia es tan hermosa.#$e#Siempre que no tenga que salir afuera.$h",
+				"Rainy_Night_0": "¡Ojalá dejara de llover ya!#$e#Pero al menos no tuviste que regar los cultivos hoy.",
+				"Rainy_Night_1": "La cena está lista, cariño. Espero que te guste.[218 732 207 224]$h",
+				"Rainy_Night_2": "El sonido de la lluvia es tan romántico... no hay nada parecido en el desierto.$7",
+				"Rainy_Night_3": "Hola, cariño. Espero que no te hayas empapado demasiado con el aguacero de hoy.$h",
+				"Rainy_Night_4": "¡Horneé algo hoy, cariño!$h#$e#Cóme un poco, salió genial.[611 234 223 608 222]$7",
+				"Indoor_Day_0": "¡Has decorado todo tan lindo!$h#$e#Pero puedo hacer algunos ajustes, si no te importa...",
+				"Indoor_Day_1": "Me encanta tener una cocina completa. Las posibilidades son infinitas.$h",
+				"Indoor_Day_2": "Horneé muffins para el desayuno, cariño. Toma uno mientras estén calientes.[651]$h",
+				"Indoor_Day_3": "¿Tienes planes de visitar el desierto Cálico hoy, cariño?#$e#¡Si vas, asegúrate de traer algunos cocos y higos chumbos!$h",
+				"Indoor_Day_4": "¿Cuáles son tus planes para hoy, cariño?$h#$e#¿Yo? Probablemente limpie un poco, lave algunos platos... Cosas divertidas, ¿sabes?",
+				"Indoor_Night_0": "¡Hice la cena![196 244 228 610]$h#$e#Adelante, pruébalo.$7",
+				"Indoor_Night_1": "Las noches aquí son tan frescas en comparación con el desierto. ¡Es tan agradable!$h",
+				"Indoor_Night_2": "Estoy agotada... ¡Vamos a la cama, cariño!",
+				"Indoor_Night_3": "Ha sido un día ajetreado para los dos.^Ha sido un día ajetreado para las dos.#$e#¡Celebremos con una buena noche de sueño!$h",
+				"Indoor_Night_4": "El valle y el desierto... Ninguno de los dos está completamente en silencio por la noche.#$e#Sin embargo, los tipos de sonidos que escuchas son completamente diferentes.#$e#Todavía estoy tratando de averiguar algunos de los sonidos del valle. Son misteriosos.$h",
+				"Outdoor_0": "¡Ah, el día de hoy está genial!$h#$e#¿No lo crees...?",
+				"Outdoor_1": "Todo aquí en el valle es tan verde. Es un marcado contraste con el amarillo del desierto",
+				"Outdoor_2": "El sol aquí es mucho más suave para mi piel. ¡Es un alivio no tener que ponerme bloqueador todos los días!$h",
+				"Outdoor_3": "Mantén tu energía hoy, cariño.#$e#Toma, esto debería ayudarte. Un bocadillo saludable.[613 398 634]$h",
+				"Outdoor_4": "¡Dime si necesitas ayuda, cariño! Sé más sobre la arena que sobre la tierra, ¡pero haré todo lo que pueda!$h",
+				"OneKid_0": "Siempre quise ser madre. Gracias por ayudar a que esto suceda, @.$6",
+				"OneKid_1": "¡%kid1 es un amor, tan pequeño! Como tú.$h",
+				"OneKid_2": "%kid1 se parece a ti, cariño.$h#$e#¡Es muy lindo!^Sé que %kid1 es adoptado... ¡pero es cierto! ¡De verdad!",
+				"OneKid_3": "Mi madre llamó esta mañana. Quiere venir a conocerte a ti y a %kid1 pronto.$h#$e#¿Mi madre? Vive bastante lejos. Mucho más lejos que el desierto Cálico.",
+				"TwoKids_0": "¡%kid2 se parece tanto a %kid1! ¡Podrían ser gemelos!#$e#¡Son tan lindos!^Sé que no son parientes, cariño... pero no podemos decirles eso hasta que sean mayores. ¡Shh!$3",
+				"TwoKids_1": "¡%kid1 y %kid2 son perfectos! Son bebés muy felices, nunca se quejan ni pelean.$h",
+				"TwoKids_2": "Asegúrate de prestar la misma atención a %kid1 y %kid2. ¡No queremos fomentar un ambiente de celos!#$e#Leí eso en un libro.$h",
+				"TwoKids_3": "¿Puedes ver si %kid2 está bien por mí? Estoy a punto de alimentar a %kid1.$h",
+				"TwoKids_4": "¡Tenemos la familia perfecta, @! ¡Estoy tan feliz que podría llorar!$6",
+				"Good_0": "@, te amo tanto que no sé qué hacer conmigo misma.$h",
+				"Good_1": "Ven acá y bésame, guapo.$7^Ven acá y bésame, hermosa.$7",
+				"Good_2": "Te amo, cariño.#$e#Ve a patear traseros y luego vuelve a casa para que podamos pasar un tiempo juntos.$h^Ve a patear traseros y luego vuelve a casa para que podamos pasar un tiempo juntas.$h",
+				"Good_3": "Pensar que me elegiste por encima de todas las chicas de este pueblo...#$e#Hiciste una buena elección, cariño.$7",
+				"Good_4": "Suerte que no te casaste antes de que el autobús volviera a funcionar, ¿verdad, cariño?#$e#De lo contrario nuestras vidas serían completamente diferentes.$h",
+				"Good_5": "Vaya, hoy hueles tan bien, cariño.$7#$e#Tan natural y sexy.$4",
+				"Good_6": "Soy muy afortunada de tener un marido tan maravilloso.$h^Soy muy afortunada de tener una esposa tan increíble.$h",
+				"Good_7": "Si pudiera, me casaría contigo todos los días por el resto de nuestras vidas.$h#$e#¡Con ceremonia y todo!$h#$e#Y la noche de bodas, por supuesto.$7",
+				"Good_8": "¡Lo recogí de camino a casa del trabajo el otro día![88 90]#$e#Espero que te resulte útil.$h",
+				"Neutral_0": "Me pregunto qué debería cocinar para la cena esta noche...#$e#¿Alguna petición, cariño?",
+				"Neutral_1": "Escuché algunos ruidos extraños afuera anoche...$s#$e#Tiendo a ponerme un poco nerviosa por la noche.$h",
+				"Neutral_2": "Encontré esto de camino a casa de la casa de Emily el otro día.[444]#$e#Bonito, ¿no? Espero que sea útil.$h",
+				"Neutral_3": "¿Tienes hambre, cariño?#$e#Cocinaré pronto.$h",
+				"Neutral_4": "Sigo pensando en visitar la biblioteca... Me vendría bien un buen libro para leer.",
+				"Neutral_5": "Nunca hay nada interesante en la televisión, ¿verdad?$s",
+				"Bad_0": "Cariño... Me vendría bien un tiempo a solas.$s",
+				"Bad_1": "Me has tratado con tanta frialdad últimamente...$s#$e#¿Es algo que dije?$s",
+				"Bad_2": "No me hables ahora mismo.$5",
+				"Bad_3": "Creo que debería haberme quedado en el desierto...$s",
+				"funLeave_Sandy": "¡Creo que iré a visitar a Emily hoy! No la he visto hace tiempo.$h#$e#No te preocupes, estaré en casa temprano ¡tú lo sabes!",
+				"funReturn_Sandy": "Hoy te extrañé, cariño.$h#$e#Emily te mandó saludos y dejó esto para ti.[400 232 213 612 605]",
+				"spring_1": "¡Feliz año nuevo, cariño! Por otro año de amor.$h",
+				"spring_12": "¡Pueblo Pelícano tiene los festivales más interesantes!#$e#Me encanta ver la búsqueda de huevos. Es muy animado.$h",
+				"spring_23": "¡La danza floral es mañana, cariño!#$e#Puede que sea un poco mayor, pero les mostraré a las demás chicas cómo se hace.$h",
+				"summer_1": "¡Los veranos aquí son mucho más frescos que en el desierto!#$e#Es un gran alivio para mi piel sensible...",
+				"summer_10": "¡Oooh, no puedo esperar para probar la sopa mañana! ¡Asegúrate de agregar algo delicioso, cariño!$7",
+				"summer_27": "¡Las medusas lunares son tan hermosas! No puedo esperar a verlas contigo mañana, cariño.$h3$e#Será tan romántico.$7",
+				"fall_1": "¡Los colores del otoño aquí en el valle son increíbles!$h",
+				"fall_15": "Me encanta la feria. ¡Asegúrate de ganar un premio mañana para mí!$h",
+				"fall_26": "No estoy segura si soy lo suficientemente valiente como para entrar al laberinto...$s#$e#Tal vez si me tomas de la mano, @.$h",
+				"winter_1": "El invierno apenas ha comenzado y ya hace mucho frío...$3#$e#¡Tendrás que mantenerme caliente, cariño! De lo contrario, me moriría de frío...$7",
+				"winter_7": "¡Traeré mi abrigo grueso y te animaré durante el concurso de pesca!",
+				"winter_24": "Mañana es la fiesta... espero que estés preparado. ¡Va a ser enorme!$h^Mañana es la fiesta... espero que estés preparada. ¡Va a ser enorme!$h",
+				"winter_28": "El final de otro año... Me alegro de que pudiéramos pasarlo juntos.$4^El final de otro año... Me alegro de que pudiéramos pasarlo juntas.$4#$e#Además... estoy un poco borracha. Toma, quítame esto.[303]$7",
+				"spouseRoom_Sandy": "#$c .5#Necesito ordenar mi ropa hoy...#$e#Tengo algo de ropa que lavar. Y podría deshacerme de algunos vestidos que nunca uso...$h",
+				"patio_Sandy": "¡Siempre quise tener un jardín de flores! Ahora que no vivo en un desierto, puedo hacerlo.$h"
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "strings/schedules/Sandy",
+			"Entries": {
+				"marriage_Sun.000": "¡Hola, cariño! Estoy aqui para visitar a Emily.",
+				"marriage_Sun.001": "Todavía me estoy acostumbrando a vivir aquí en el pueblo."
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/EngagementDialogue",
+			"Entries": {
+				"Sandy0": "Yo, viviendo en una granja... ¡Qué excitante!$1#$e#Y una gran boda...#$e#No puedo esperar.$1",
+				"Sandy1": "Oh, @, ¡Estoy tan feliz!$6#$e#Vamos a estar genial juntos.$6^Vamos a estar genial juntas.$6",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "Data/mail",
+			"Entries": {
+				"sandyDancing": "¡@!^^Un pequeño pajarito me contó que no has ido a danzar en ciudad Zuzu antes. ¡Creo que deberíamos cambiar eso esta noche!^¡Encuentrame en mi tienda alrededor de las 9 de la noche y vamos a salir!^^  Con amor,^  Sandy^^P.D. ¡¡No te olvides de ponerte algo mono!! :)",
+				"morningAfter": "@,^^Gracias por cuidarme la anoche. Mi memoria está un poco borrosa, pero recuerdo cómo me arropastes cuando volvimos a mi casa.^Lo dije en serio cuando te dije que te amo. ¡No fué solo divagaciones de una borracha! De verdad.^Te veo la próxima vez que vengas (¡¡¡que sea pronto!!!).^^Con amor,^ Sandy",
+			},
+		},
+		{
+			"Action": "EditData",
+			"Target": "data/festivals/spring13",
+			"Entries": {
+				"Sandy": "Una búsqueda de huevos, ¿eh? El juego del escondite no es lo mío, pero ver a los niños jugarlo es agradable."
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+			},
+		},
+		{
+			"Action": "EditData",
+		  	"Target": "data/festivals/spring24",
+			"Entries": {
+				"Sandy": "¡Me encanta este festival! Flores, baile, ¡no hay nada que no me guste!$h#$e#¡Definitivamente regresaré el año que viene!$h"
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+			},
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/summer11",
+		  	"Entries": {
+				"Sandy": "Estás haciendo una sopa caliente... en una playa... en pleno verano. Si. Vale."
+		  	},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+			},
+		},
+		{
+			"Action": "EditData",
+		  	"Target": "data/festivals/summer28",
+		  	"Entries": {
+				"Sandy": "Estoy emocionada de verlas. No tenemos medusas en casa, ยกy mucho menos tan hermosas!$h"
+		  	},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+			},
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/fall16",
+		  	"Entries": {
+				"Sandy": "Alejarse del desierto siempre es una ventaja, pero ¿las habilidades de Gus en la parrilla?#$b#Solo esos por sí mismo merece un viaje aquí."
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+			},
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/fall27",
+		  	"Entries": {
+				"Sandy": "¡Ooh! Esto es algo espeluznante. ¡Es divertido!$h"
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+			}
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/winter8",
+		  	"Entries": {
+				"Sandy": "¡Hace frío! ¡Nunca hace tanto frío en casa!#$e#Pesca peces grandes solo para mí, ¿de acuerdo?$h"
+			},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+			},
+		},
+		{
+		  	"Action": "EditData",
+		  	"Target": "data/festivals/winter25",
+		  	"Entries": {
+				"Sandy": "Esto es encantador, cariño. Hace mucho frío, pero puedo sentir el calor de toda la comunidad."
+		  	},
+			"When": {
+				"HasMod |contains=FlashShifter.StardewValleyExpandedCP": "false",
+			}
+		},
+	]
+}
