@@ -559,7 +559,7 @@
 					"Layer": "Back",
 					"SetTilesheet": "outdoors",
 					"SetIndex": "170",
-					"SetProperties": { "NPCBarrier": "True" },
+					"SetProperties": { "TouchAction": "Warp Custom_LfL_MarnieBarn 9 13" },
 				},
 				{
 					"Position": { "X": 97, "Y": 15},
@@ -571,7 +571,7 @@
 					"Layer": "Back",
 					"SetTilesheet": "outdoors",
 					"SetIndex": "171",
-					"SetProperties": { "NPCBarrier": "True" },
+					"SetProperties": { "TouchAction": "Warp Custom_LfL_MarnieBarn 10 13" },
 				},
 				{
 					"Position": { "X": 98, "Y": 15},
@@ -583,7 +583,7 @@
 					"Layer": "Back",
 					"SetTilesheet": "outdoors",
 					"SetIndex": "170",
-					"SetProperties": { "NPCBarrier": "True" },
+					"SetProperties": { "TouchAction": "Warp Custom_LfL_MarnieBarn 13 13" },
 				},
 				{
 					"Position": { "X": 99, "Y": 15},
@@ -595,14 +595,8 @@
 					"Layer": "Back",
 					"SetTilesheet": "outdoors",
 					"SetIndex": "171",
-					"SetProperties": { "NPCBarrier": "True" },
+					"SetProperties": { "TouchAction": "Warp Custom_LfL_MarnieBarn 14 13" },
 				},
-			],
-			"AddWarps": [
-				"96 15 Custom_LfL_MarnieBarn 9 13",
-				"97 15 Custom_LfL_MarnieBarn 10 13",
-				"98 15 Custom_LfL_MarnieBarn 13 13",
-				"99 15 Custom_LfL_MarnieBarn 14 13",
 			],
 			"When": { "MarnieBarnLocation": "true"}
 		},
